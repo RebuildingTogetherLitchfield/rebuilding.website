@@ -2,31 +2,31 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import logo from "../images/Logo_Stacked_black.png"
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#35641b`,
+      background: `#7ac143`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        padding: `1.45rem 1.0875rem`,
+        paddingTop: `1.45rem`,
         textAlign: `center`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <Link
+        to="/"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+        }}
+      >
+        <img src={logo} alt="Rebuilding Together Logo" />
+      </Link>
     </div>
   </header>
 )
