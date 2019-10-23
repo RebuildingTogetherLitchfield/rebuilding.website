@@ -3,47 +3,47 @@ import { Link } from "gatsby"
 
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
+import Button from "react-bootstrap/Button"
 
-import "../styles/twt-styles.css"
+import "../styles/navigation.css"
 
 const Navigation = () => {
   return (
     <Navbar
       collapseOnSelect
-      expand="lg"
+      expand="md"
       bg="light"
       variant="light"
-      className="top_nav_desktop"
-      style={{ padding: `0` }}
+      className="top_nav"
     >
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto top_nav_desktop">
-          <div className="top_nav top_nav-left">
-            <ul className="menu nav navbar-nav">
-              <li className="first leaf">
-               
-                <Link className="menu_slide_btn" to="/about-us/">
-                  Menu item 1
-                </Link>
-               
-              </li>
-              <li className="leaf">
-               
-                <Link className="menu_slide_btn" to="/about-us/">
-                  Menu item 2
-                </Link>
-              
-              </li>
-              <li className="last leaf">
-              
-                <Link className="menu_slide_btn" to="/about-us/">
-                  Menu item 3
-                </Link>
-              
-              </li>
-            </ul>
-          </div>
+        <Nav className="mr-auto">
+          <Nav.Link className="nav_link bdr-right">
+            <Link className="menu_btn" to="/">
+              Home
+            </Link>
+          </Nav.Link>
+          <Nav.Link className="nav_link bdr-right">
+            <Link className="menu_btn" to="/about-us/">
+              About Us
+            </Link>
+          </Nav.Link>
+        </Nav>
+        <Button variant="danger" className="donate-btn">
+          &hearts; Donate
+        </Button>
+        <Nav>
+          <Nav.Link className="nav_link bdr-left">
+            <Link className="menu_btn" to="#">
+              Volunteer
+            </Link>
+          </Nav.Link>
+          <Nav.Link eventKey={2} href="#memes" className="nav_link bdr-left">
+            <Link className="menu_btn" to="#">
+              Documents
+            </Link>
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
