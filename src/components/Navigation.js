@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import Button from "react-bootstrap/Button"
 
+import smLogo from "../images/Logo_Horizontal_green.png"
 import "../styles/navigation.css"
 
 const Navigation = () => {
@@ -16,9 +17,25 @@ const Navigation = () => {
       variant="light"
       className="top_nav"
     >
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Brand
+        href="https://rebuildingtogetherlitchfield.org"
+        className="d-xl-none d-lg-none d-md-none"
+      >
+        <img
+          alt="Rebuilding Together Litchfield"
+          src={smLogo}
+          width="120"
+          height="40"
+          className="d-inline-block align-top"
+          style={{ paddingLeft: `5px` }}
+        />
+      </Navbar.Brand>
+      <Navbar.Toggle
+        aria-controls="responsive-navbar-nav"
+        style={{ marginRight: `10px` }}
+      />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
+        <Nav className="left-nav">
           <div className="nav_link bdr-right">
             <Link className="menu_btn" to="/">
               Home
@@ -29,6 +46,14 @@ const Navigation = () => {
               About Us
             </Link>
           </div>
+          <div className="nav_link bdr-right">
+            <Link
+              className="menu_btn d-xl-none d-lg-none d-md-none"
+              to="/about-us/"
+            >
+              In the News
+            </Link>
+          </div>
         </Nav>
         <Button
           variant="danger"
@@ -37,10 +62,18 @@ const Navigation = () => {
         >
           &hearts; Donate
         </Button>
-        <Nav>
+        <Nav className="right-nav">
           <div className="nav_link bdr-left">
             <Link className="menu_btn" to="/about-us/">
-              Volunteer
+              Contact Us
+            </Link>
+          </div>
+          <div className="nav_link bdr-left">
+            <Link
+              className="menu_btn d-xl-none d-lg-none d-md-none"
+              to="/about-us/"
+            >
+              Get Involved
             </Link>
           </div>
           <div className="nav_link bdr-left">

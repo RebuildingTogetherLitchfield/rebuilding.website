@@ -8,7 +8,7 @@ import SEO from "../components/Seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
+    <h1 style={{ marginTop: `20px` }}>Hi people</h1>
     <div className="container">
       <iframe
         src="https://secure.anedot.com/rebuilding-together-litchfield-county/donate?embed=true"

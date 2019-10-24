@@ -5,6 +5,20 @@ module.exports = {
     keywords: `housing, nonprofit, charity, elderly, low-income`,
     author: `@MRebehn`,
     siteURL: `https://rebuildingtogetherlitchfield.org`,
+    menuLinks: [
+      {
+        name: "home",
+        link: "/",
+      },
+      {
+        name: "about-us",
+        link: "/about-us",
+      },
+      {
+        name: "contact",
+        link: "/contact",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
