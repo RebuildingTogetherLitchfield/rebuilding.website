@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Navigation from "./Navigation"
 import Header from "./Header"
+import Footer from "./Footer"
 
 import "../styles/layout.css"
 
@@ -24,22 +25,13 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          margin: `0 auto`,
-          padding: `0px 1.0875rem 1.45rem`,
+          margin: `0, auto`,
+          padding: `0 0`,
           paddingTop: 0,
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}
-          {` `}
-          <a
-            href="https://rebuildingtogetherlitchfield.org"
-            style={{ textDecoration: `none` }}
-          >
-            Rebuilding Together Litchfield County
-          </a>
-        </footer>
+        <Footer />
       </div>
     </>
   )

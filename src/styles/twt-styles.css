@@ -16,8 +16,8 @@
 
 .clearfix:before,
 .clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+  content: " "; 
+  display: table; 
 }
 .clearfix:after {
   clear: both;
@@ -272,8 +272,6 @@ h3 {
   -moz-border-top-colors: none;
   border-bottom: inherit;
   border-image: none;
-  border-left: 1px solid #424242;
-  border-right: 1px solid #424242;
   border-top: 1px solid #424242;
   background-color: #666767;
   color: #ffffff;
@@ -282,15 +280,17 @@ h3 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  text-align: center;
+  padding: 0 18px;
 }
 .footer-in-bottom {
   position: absolute;
   bottom: -50px;
 }
-.footer::after,
+/* .footer::after,
 .footer-in-bottom::after {
-  content: " ";
-}
+  content: "";
+} */
 .footer-navbar-right {
   float: right;
 }
@@ -410,6 +410,7 @@ h3 {
   line-height: 18px;
   margin-bottom: 0;
 }
+
 /*---------------------------------------------end of footer---------------------------------------------------------*/
 .pull-left {
   float: left;
@@ -847,4 +848,16 @@ p.members_name {
 .arhive-story-item img {
   height: 240px;
   width: 100%;
+}
+
+.developer {
+  color: #89c853;
+}
+
+.developer:hover {
+  color: #92c1af;
+  text-decoration: none;
+}
+.color-green {
+  color: #89c853;
 }

@@ -19,31 +19,35 @@ const Navigation = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link className="nav_link bdr-right">
+          <div className="nav_link bdr-right">
             <Link className="menu_btn" to="/">
               Home
             </Link>
-          </Nav.Link>
-          <Nav.Link className="nav_link bdr-right">
+          </div>
+          <div className="nav_link bdr-right">
             <Link className="menu_btn" to="/about-us/">
               About Us
             </Link>
-          </Nav.Link>
+          </div>
         </Nav>
-        <Button variant="danger" className="donate-btn">
+        <Button
+          variant="danger"
+          className="donate-btn"
+          href="https://secure.anedot.com/rebuilding-together-litchfield-county/donate"
+        >
           &hearts; Donate
         </Button>
         <Nav>
-          <Nav.Link className="nav_link bdr-left">
-            <Link className="menu_btn" to="#">
+          <div className="nav_link bdr-left">
+            <Link className="menu_btn" to="/about-us/">
               Volunteer
             </Link>
-          </Nav.Link>
-          <Nav.Link eventKey={2} href="#memes" className="nav_link bdr-left">
-            <Link className="menu_btn" to="#">
+          </div>
+          <div className="nav_link bdr-left">
+            <Link className="menu_btn" to="/about-us/">
               Documents
             </Link>
-          </Nav.Link>
+          </div>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
