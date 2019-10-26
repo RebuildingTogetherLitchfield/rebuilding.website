@@ -110,3 +110,53 @@
     margin: auto;
   }
 }
+
+.head-nav {
+  text-transform: uppercase;
+  font-size: 26px;
+  text-decoration: none;
+  color: #203d10;
+}
+
+.head-nav:hover {
+  text-decoration: none;
+  color: #35641b;
+}
+
+.header-main {
+  background: #7ac143;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+  min-height: 210px;
+}
+
+.header-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.head_nav-left {
+  float: left;
+  padding-left: 360px;
+  padding-top: 45px;
+}
+
+.small-word {
+  font-size: 18px;
+  display: block;
+}
+
+.head_nav-right {
+  float: right;
+  padding-right: 350px;
+  padding-top: 45px;
+}
+
+.link-logo {
+  color: white;
+  text-decoration: none;
+}
+
+.header-logo {
+  max-width: 260px;
+}

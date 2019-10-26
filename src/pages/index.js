@@ -9,15 +9,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1 style={{ marginTop: `20px` }}>Hi people</h1>
-    <div className="container">
-      <iframe
-        src="https://secure.anedot.com/rebuilding-together-litchfield-county/donate?embed=true"
-        width="100%"
-        height="1100"
-        frameBorder="0"
-        title="Anedot Donation"
-      ></iframe>
-    </div>
+
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

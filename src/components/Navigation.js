@@ -46,7 +46,7 @@ const Navigation = () => {
               About Us
             </Link>
           </div>
-          <div className="nav_link bdr-right">
+          <div className="nav_link">
             <Link
               className="menu_btn d-xl-none d-lg-none d-md-none"
               to="/about-us/"
@@ -68,7 +68,7 @@ const Navigation = () => {
               Contact Us
             </Link>
           </div>
-          <div className="nav_link bdr-left">
+          <div className="nav_link">
             <Link
               className="menu_btn d-xl-none d-lg-none d-md-none"
               to="/about-us/"
