@@ -91,7 +91,7 @@ h1:after {
   left: 50%;
   margin-left: -50px;
 } */
-.green-color h1:before {
+/* .green-color h1:before {
   background-color: #89c853;
 }
 
@@ -120,8 +120,8 @@ h1:after {
 
 .blue-color h1:after {
   background-color: #00a5c3;
-}
-h2 {
+} */
+/* h2 {
   font-size: 24px;
   text-transform: capitalize;
   font-weight: 700;
@@ -143,8 +143,8 @@ h2::before {
   display: block;
   left: 50%;
   margin-left: -50px;
-}
-.green-color h2:before {
+} */
+/* .green-color h2:before {
   background-color: #89c853;
 }
 .orange-color h2:before {
@@ -156,7 +156,7 @@ h2::before {
 .blue-color h2:before {
   background-color: #00a5c3;
 }
-
+ */
 h3 {
   color: #427424;
   display: block;
