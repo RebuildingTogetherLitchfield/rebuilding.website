@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import Image from "../components/Image"
 import SEO from "../components/Seo"
+import Offer from "../components/Offer"
 
 import "../styles/index.css"
 import construction from "../images/construction.svg"
@@ -24,11 +25,15 @@ const IndexPage = () => (
           </h4>
         </div>
         <div className="col-md-6 intro-image-container">
-          <img className="intro-image" src={construction} />
+          <img
+            className="intro-image"
+            alt="House Construction"
+            src={construction}
+          />
         </div>
       </div>
     </div>
-
+    <Offer />
     <Link to="/about-us/">Go to About Us</Link>
   </Layout>
 )

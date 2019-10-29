@@ -77,3 +77,36 @@
   left: 50%;
   margin-left: -50px;
 }
+
+.offer-section {
+  margin: 60px auto 40px;
+}
+
+.offer-head {
+  text-align: center;
+}
+
+.offer-heading {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  padding: 17px 0;
+  margin: 70px auto 15px;
+  max-width: 620px;
+}
+
+.offer-heading:before {
+  content: "";
+  width: 100px;
+  height: 6px;
+  background-color: #fcbb53;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: block;
+  left: 50%;
+  margin-left: -50px;
+}

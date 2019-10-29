@@ -25,7 +25,7 @@ const Header = ({ siteTitle, menuLinks }) => {
           <img
             src={logo}
             className="header-logo"
-            alt="Rebuilding Together Logo"
+            alt="Rebuilding Together Litchfield County"
           />
         </Link>
       </div>
