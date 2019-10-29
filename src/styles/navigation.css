@@ -127,7 +127,7 @@
   grid-row: 2;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .link-logo {
@@ -144,7 +144,7 @@
   grid-row: 2;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .head-nav {

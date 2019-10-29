@@ -26,14 +26,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navigation menuLinks={data.site.siteMetadata.menuLinks} />
-      <Header
-        menuLinks={data.site.siteMetadata.menuLinks}
-        siteTitle={data.site.siteMetadata.title}
-      />
+
       <div
         style={{
           margin: `0, auto`,
-          padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
       >

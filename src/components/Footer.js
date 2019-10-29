@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import "../styles/twt-styles.css"
-
 const Footer = () => {
   return (
     <footer className="footer">

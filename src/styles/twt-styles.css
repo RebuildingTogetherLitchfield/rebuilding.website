@@ -54,7 +54,7 @@ strong {
 a {
   text-decoration: none;
 }
-h1 {
+/* h1 {
   font-size: 52px;
   text-transform: uppercase;
   color: #000000;
@@ -65,7 +65,7 @@ h1 {
   max-width: 620px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
-}
+} */
 
 /* h1:before {
   content: "";
@@ -157,7 +157,7 @@ h2::before {
   background-color: #00a5c3;
 }
  */
-h3 {
+/* h3 {
   color: #427424;
   display: block;
   font-size: 22px;
@@ -167,7 +167,7 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
-}
+} */
 
 .callout_text {
   color: #89c853;

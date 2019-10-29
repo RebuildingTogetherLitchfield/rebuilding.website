@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import Image from "../components/Image"
 import SEO from "../components/Seo"
 import Offer from "../components/Offer"
+import Hero from "../components/Hero"
 
 import "../styles/index.css"
 import construction from "../images/construction.svg"
@@ -12,6 +13,7 @@ import construction from "../images/construction.svg"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Hero />
     <div className="container-fluid index-intro">
       <div className="row">
         <div className="col-md-6 intro-container">
