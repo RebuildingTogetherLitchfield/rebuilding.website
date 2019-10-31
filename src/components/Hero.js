@@ -5,8 +5,10 @@ const Hero = () => {
     <div className="hero-image">
       <div className="hero-writing">
         <h1 className="hero-heading">Rebuilding Together Litchfield County</h1>
-        <p className="hero-text">And I'm a Photographer</p>
-        <button>Hire me</button>
+        <p className="hero-text">
+          I am a <span className="turn-green">[Re]</span>builder
+        </p>
+        <button className="btn btn-light">Click to Volunteer</button>
       </div>
     </div>
   )

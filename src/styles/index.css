@@ -17,14 +17,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(41, 204, 19);
+  color: #89c853;
 }
 
 .hero-heading {
   font-size: 3em;
   font-weight: 800;
+  text-shadow: 2px 2px 4px #000000;
 }
 
+.hero-text {
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.turn-green {
+  color: #89c853;
+}
 .index-intro {
   margin: 50px auto;
 }
