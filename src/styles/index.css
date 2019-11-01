@@ -118,10 +118,6 @@
   margin: 60px auto 40px;
 }
 
-.offer-head {
-  text-align: center;
-}
-
 .offer-heading {
   font-size: 24px;
   text-transform: capitalize;
@@ -149,4 +145,21 @@
 
 .offer-text {
   font-size: 1.2em;
+}
+
+@media (max-width: 580px) {
+  .offer-text {
+    margin-left: 10px;
+  }
+  .service-list {
+    padding-top: 80px;
+  }
+}
+
+.services {
+  margin-top: 96px;
+}
+
+.service-list {
+  margin: auto;
 }

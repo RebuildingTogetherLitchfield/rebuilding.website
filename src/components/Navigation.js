@@ -16,6 +16,7 @@ const Navigation = () => {
       bg="light"
       variant="light"
       className="top_nav"
+      fixed="top"
     >
       <Navbar.Brand
         href="https://rebuildingtogetherlitchfield.org"
