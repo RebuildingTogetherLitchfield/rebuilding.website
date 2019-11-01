@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
-import Image from "../components/Image"
 import SEO from "../components/Seo"
 import Offer from "../components/Offer"
 import Hero from "../components/Hero"
@@ -36,7 +34,6 @@ const IndexPage = () => (
       </div>
     </div>
     <Offer />
-    <Link to="/about-us/">Go to About Us</Link>
   </Layout>
 )
 
