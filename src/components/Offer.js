@@ -3,10 +3,10 @@ import React from "react"
 const Offer = () => {
   return (
     <div className="container offer-section">
-      <div className="row col-sm-6 offer-head">
+      <div className="row col-sm-6-offset-2 offer-head">
         <h2 className="offer-heading">Homeowner:</h2>
       </div>
-      <div className="row col-sm-8">
+      <div className="row col-sm-6-offset-2">
         <p className="offer-text">
           It's your home but we can help make it home again.
         </p>

@@ -8,7 +8,7 @@ const Hero = () => {
         <p className="hero-text">
           I am a <span className="turn-green">[Re]</span>builder
         </p>
-        <button className="btn btn-light">Click to Volunteer</button>
+        <button className="btn btn-success">Click to Volunteer</button>
       </div>
     </div>
   )
