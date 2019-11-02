@@ -8,17 +8,18 @@ import Button from "react-bootstrap/Button"
 import NavDropdown from "react-bootstrap/NavDropdown"
 
 import smLogo from "../images/Logo_Horizontal_green.png"
+import fbLogo from "../images/icons/squareFb.png"
 import "../styles/navigation.css"
 
 const Navigation = () => {
   return (
     <Navbar
       collapseOnSelect
-      expand="md"
+      expand="lg"
       bg="light"
       variant="light"
       className="top_nav"
-      fixed="top"
+      sticky="top"
     >
       <Navbar.Brand href="https://rebuildingtogetherlitchfield.org">
         <img
@@ -35,6 +36,7 @@ const Navigation = () => {
         style={{ marginRight: `10px` }}
       />
       <Navbar.Collapse id="responsive-navbar-nav">
+        <a href="https://www.facebook.com/Rebuilding-Together-of-Litchfield-County-1704567566428168/"><img src={fbLogo} className="fb-logo" /></a>
         <Button
           variant="danger"
           className="donate-btn"
@@ -60,7 +62,12 @@ const Navigation = () => {
             style={{ paddingTop: `7px` }}
           >
             <NavDropdown.Item href="#action/3.1">What We Do</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
+            <NavDropdown.Item
+              onClick={event => {
+                event.preventDefault()
+                navigate("/strategic-plan/")
+              }}
+            >
               Strategic Plan
             </NavDropdown.Item>
             <NavDropdown.Item
@@ -85,7 +92,7 @@ const Navigation = () => {
           <NavDropdown
             title="Documents"
             id="collapsible-nav-dropdown"
-            alignRight="true"
+            alignRight={true}
             className="dropdown_btn nav_link bdr-left"
             style={{ paddingTop: `7px` }}
           >
