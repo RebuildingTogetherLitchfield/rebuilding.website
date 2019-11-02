@@ -32,12 +32,20 @@
     border-bottom: 3px solid #427424;
     line-height: 38px;
   }
+
+  .nav-link {
+    color: #427424 !important;
+  }
+
+  .nav-link:hover {
+    color: #92c1af !important;
+  }
 }
 
 @media (min-width: 760px) {
   .nav_link {
-    height: 45px;
-    padding-top: 10px;
+    height: 54px;
+    padding-top: 15px;
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -109,6 +117,22 @@
   .donate-btn {
     margin: auto;
   }
+
+  .nav-link {
+    color: #427424 !important;
+  }
+
+  .nav-link:hover {
+    color: #fff !important;
+  }
+}
+
+.dropdown-item {
+  color: #427424;
+}
+
+.dropdown-item:hover {
+  color: #244411;
 }
 
 .header-main {
