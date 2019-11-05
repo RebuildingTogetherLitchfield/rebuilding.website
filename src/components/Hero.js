@@ -1,12 +1,16 @@
 import React from "react"
 
+import styles from "./hero.module.css"
+
 const Hero = () => {
   return (
-    <div className="hero-image">
-      <div className="hero-writing">
-        <h1 className="hero-heading">Rebuilding Together Litchfield County</h1>
-        <p className="hero-text">
-          I am a <span className="turn-green">[Re]</span>builder
+    <div className={styles.heroImage}>
+      <div className={styles.heroWriting}>
+        <h1 className={styles.heroHeading}>
+          Rebuilding Together Litchfield County
+        </h1>
+        <p className={styles.heroText}>
+          I am a <span className={styles.turnGreen}>[Re]</span>builder
         </p>
         <button className="btn btn-success">Click to Volunteer</button>
       </div>

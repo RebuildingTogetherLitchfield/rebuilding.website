@@ -1,25 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import "./footer.css"
+import styles from "./footer.module.css"
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
       <div className="row">
-        <div className="col-sm-6 copyright color-green">
+        <div className={`col-sm-6 ${styles.copyright}`}>
           © {new Date().getFullYear()}
           {` `}
-          <Link style={{ textDecoration: `none`, color: `#89c538` }} to="/">
+          <Link className={styles.footerName} to="/">
             Rebuilding Together Litchfield
           </Link>
         </div>
-        <div className="col-sm-6 copyright">
+        <div className={`col-sm-6 ${styles.copyright}`}>
           <a
             href="https://mattaz.com"
             target="_blank"
             rel="noreferrer noopener"
-            className="developer"
+            className={styles.developer}
           >
             Mattaz Web Development
           </a>

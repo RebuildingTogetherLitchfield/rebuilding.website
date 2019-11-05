@@ -1,26 +1,33 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import BoardMember from "../components/BoardMember"
-import execData from "../data/exec"
+import Header from "../components/Header"
 
 const SecondPage = () => {
-  const executives = execData.map(exMem => (
-    <BoardMember
-      key={exMem.id}
-      title={exMem.position}
-      name={exMem.name}
-      excerpt={exMem.excerpt}
-    />
-  ))
   return (
     <Layout>
       <SEO title="About Us" />
-      <h1 style={{ marginTop: 50 }}>Board of Directors</h1>
-      <div>{executives}</div>
-      <Link to="/">Go back to the homepage</Link>
+      <Header pageHeading="About Rebuilding Together Litchfield County" />
+      <div className="container">
+        <div className="row">
+          <h1 className="about-heading">Our Mission</h1>
+        </div>
+        <div className="row">
+          <p className="mission-text col-sm-7">
+            Repairing homes, revitalizing communities, rebuilding lives. We
+            preserve and revitalize houses and communities, assuring that
+            low-income homeowners, particularly those who are elderly, disabled
+            and/or supporting young children, live in safety and warmth.
+            National Rebuild Day is on the last Saturday in April.{" "}
+          </p>
+          <img
+            src="https://res.cloudinary.com/mattaz/image/upload/v1572459613/RebuildingTogether/2016-07-28_group.png"
+            alt="Rebuilding Together Crew"
+          />
+          >
+        </div>
+      </div>
     </Layout>
   )
 }

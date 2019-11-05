@@ -62,7 +62,14 @@ const Navigation = () => {
             className="dropdown_btn nav_link bdr-left"
             style={{ paddingTop: `7px` }}
           >
-            <NavDropdown.Item href="#action/3.1">What We Do</NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={e => {
+                e.preventDefault()
+                navigate("/about-us/")
+              }}
+            >
+              About RTLC
+            </NavDropdown.Item>
             <NavDropdown.Item
               onClick={event => {
                 event.preventDefault()

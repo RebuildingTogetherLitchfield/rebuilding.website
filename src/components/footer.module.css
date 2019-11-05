@@ -34,3 +34,13 @@
   color: #92c1af;
   text-decoration: none;
 }
+
+.footerName {
+  text-decoration: none;
+  color: #89c853;
+}
+
+.footerName:hover {
+  text-decoration: none;
+  color: #92c1af;
+}
