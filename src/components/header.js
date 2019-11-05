@@ -1,6 +1,6 @@
 import React from "react"
 
-import "../styles/navigation.css"
+import "./navigation.css"
 
 const Header = props => {
   return (

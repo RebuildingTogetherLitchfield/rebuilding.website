@@ -18,7 +18,11 @@ const StrategicPlan = () => {
       <Header pageHeading="Strategic Plan" />
       <div className="container" style={contStyle}>
         <div className="row mb-3">
-          <img src={planIcon} className="plan-icon-img col-sm-6" />
+          <img
+            src={planIcon}
+            className="plan-icon-img col-sm-6"
+            alt="Clipboard with plan"
+          />
           <h3 className="plan-heading col-sm-6">
             A Strategic Plan on
             <br /> Four Service Areas

@@ -9,7 +9,7 @@ import NavDropdown from "react-bootstrap/NavDropdown"
 
 import smLogo from "../images/Logo_Horizontal_green.png"
 import fbLogo from "../images/icons/squareFb.png"
-import "../styles/navigation.css"
+import "./navigation.css"
 
 const Navigation = () => {
   return (
@@ -36,7 +36,7 @@ const Navigation = () => {
       />
       <Navbar.Collapse id="responsive-navbar-nav">
         <a href="https://www.facebook.com/Rebuilding-Together-of-Litchfield-County-1704567566428168/">
-          <img src={fbLogo} className="fb-logo" />
+          <img src={fbLogo} className="fb-logo" alt="Facebook" />
         </a>
         <Button
           variant="danger"

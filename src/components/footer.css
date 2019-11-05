@@ -1,0 +1,36 @@
+.footer {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-bottom: inherit;
+  border-image: none;
+  border-top: 1px solid #89c853;
+  background-color: #666767;
+  color: #ffffff;
+  width: 100%;
+  min-height: 50px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+  padding: 0 18px;
+}
+
+.copyright {
+  padding-top: 15px;
+  padding-left: 13px;
+  color: #dddddd;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
+.developer {
+  color: #89c853;
+}
+
+.developer:hover {
+  color: #92c1af;
+  text-decoration: none;
+}
