@@ -34,6 +34,6 @@ const boardMembers = [
     excerpt:
       "Webster Bank's Deputy General Counsel and avid do-it-yourself practitioner. Fred brings needed vocational and avocational skills to the Board. ",
   },
-],
+]
 
 export default boardMembers

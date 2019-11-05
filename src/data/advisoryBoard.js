@@ -41,6 +41,6 @@ const advisoryBoard = [
     excerpt:
       "Founding Coordinator, Education Without Walls, New Milford. Financial Advisor, Aberdeen Associates, Greenwich, CT",
   },
-],
+]
 
 export default advisoryBoard

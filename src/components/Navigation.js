@@ -16,7 +16,6 @@ const Navigation = () => {
     <Navbar
       collapseOnSelect
       expand="lg"
-      bg="light"
       variant="light"
       className="top_nav"
       sticky="top"
@@ -36,13 +35,15 @@ const Navigation = () => {
         style={{ marginRight: `10px` }}
       />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <a href="https://www.facebook.com/Rebuilding-Together-of-Litchfield-County-1704567566428168/"><img src={fbLogo} className="fb-logo" /></a>
+        <a href="https://www.facebook.com/Rebuilding-Together-of-Litchfield-County-1704567566428168/">
+          <img src={fbLogo} className="fb-logo" />
+        </a>
         <Button
           variant="danger"
           className="donate-btn"
           href="https://secure.anedot.com/rebuilding-together-litchfield-county/donate"
         >
-          &hearts; Donate
+          &hearts; Click to Donate
         </Button>
         <Nav className="right-nav">
           <div className="nav_link bdr-left">
@@ -79,7 +80,12 @@ const Navigation = () => {
               In The News
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
+            <NavDropdown.Item
+              onClick={e => {
+                e.preventDefault()
+                navigate("/board-of-directors/")
+              }}
+            >
               Board of Directors
             </NavDropdown.Item>
           </NavDropdown>
