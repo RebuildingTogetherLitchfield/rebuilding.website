@@ -113,6 +113,10 @@
   font-size: 1.2em;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 @media (max-width: 580px) {
   .offer-text {
     margin-left: 10px;
@@ -168,4 +172,67 @@
   display: block;
   left: 50%;
   margin-left: -50px;
+}
+
+.about-page-start {
+  margin-top: 28px;
+  margin-bottom: 48px;
+}
+
+.mission-text {
+  margin: auto 2px;
+  font-size: 1.2em;
+}
+.about-heading {
+  margin-bottom: 58px;
+}
+
+.about-intro-img {
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 9px 18px 0 rgba(104, 128, 104, 1);
+  -moz-box-shadow: 1px 9px 18px 0 rgba(104, 128, 104, 1);
+  box-shadow: 1px 9px 18px 0 rgba(104, 128, 104, 1);
+  margin: auto;
+}
+
+.orange-heading {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  padding: 17px 0;
+  margin: 70px auto 15px;
+  max-width: 620px;
+}
+
+.orange-heading:before {
+  content: "";
+  width: 100px;
+  height: 6px;
+  background-color: #fcbb53;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: block;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.nondiscrimination {
+  margin-top: 46px;
+}
+
+.about-text {
+  font-size: 1.05em;
+}
+
+@media (max-width: 580px) {
+  .mission-text {
+    margin: 0 10px 30px 10px;
+  }
+  .about-text {
+    margin: 0 10px;
+  }
 }
