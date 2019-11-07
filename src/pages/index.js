@@ -7,6 +7,7 @@ import Hero from "../components/Hero"
 
 import "../styles/index.css"
 import construction from "../images/construction.svg"
+import map from "../images/rtMap.png"
 
 const IndexPage = () => (
   <Layout>
@@ -34,6 +35,58 @@ const IndexPage = () => (
       </div>
     </div>
     <Offer />
+    <div className="container">
+      <div className="row">
+        <div className="location-heading col-12">
+          <h2 className="center">Where to find Rebuilding Together</h2>
+        </div>
+      </div>
+      <div className="row">
+        <div className="location-map col-12">
+          <img
+            src={map}
+            style={{ width: `750`, height: `500` }}
+            alt="Service Area"
+            className="area-map"
+            useMap="#imageMap"
+          />
+          <map name="imageMap" id="Map">
+            <area
+              target="_parent"
+              alt="Rebuilding Together Litchfield"
+              title="Rebuilding Together Litchfield"
+              href="https://res.cloudinary.com/mattaz/image/upload/v1572460634/RebuildingTogether/Icons/RebuilderLogo.jpg"
+              coords="92,164,201,223"
+              shape="rect"
+            />
+            <area
+              target="_parent"
+              alt="Rebuilding Together New Britain"
+              title="Rebuilding Together New Britain"
+              href="#"
+              coords="300,180,403,239"
+              shape="rect"
+            />
+            <area
+              target="_self"
+              alt="Rebuilding Together Hartford"
+              title="Rebuilding Together Hartford"
+              href="#"
+              coords="329,104,436,153"
+              shape="rect"
+            />
+            <area
+              target="_blank"
+              alt="Rebuilding Together Manchester"
+              title="Rebuilding Together Manchester"
+              href="#"
+              coords="394,26,500,79"
+              shape="rect"
+            />
+          </map>
+        </div>
+      </div>
+    </div>
   </Layout>
 )
 

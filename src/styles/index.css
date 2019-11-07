@@ -236,3 +236,12 @@
     margin: 0 10px;
   }
 }
+
+.location-heading {
+  margin-top: 36px;
+}
+
+.location-map {
+  margin: 28px auto 38px;
+  text-align: center;
+}
