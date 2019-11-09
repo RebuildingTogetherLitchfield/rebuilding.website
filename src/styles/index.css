@@ -245,3 +245,7 @@
   margin: 28px auto 38px;
   text-align: center;
 }
+
+.caro-img {
+  max-height: 800px;
+}

@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Offer from "../components/Offer"
-import Hero from "../components/Hero"
+import Carousel from "../components/Carousel"
 
 import "../styles/index.css"
 import construction from "../images/construction.svg"
@@ -12,7 +12,7 @@ import map from "../images/rtMap.png"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero />
+    <Carousel />
     <div className="container-fluid index-intro">
       <div className="row">
         <div className="col-md-6 intro-container">
