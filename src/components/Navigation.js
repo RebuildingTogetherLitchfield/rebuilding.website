@@ -7,7 +7,7 @@ import Nav from "react-bootstrap/Nav"
 import Button from "react-bootstrap/Button"
 import NavDropdown from "react-bootstrap/NavDropdown"
 
-import smLogo from "../images/Logo_Horizontal_green.png"
+import smLogo from "../images/Logo_Horizontal.png"
 import fbLogo from "../images/icons/squareFb.png"
 import "./navigation.css"
 

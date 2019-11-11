@@ -15,17 +15,10 @@ const ImgCarousel = () => {
           alt="Kent School Helpers"
         />
         <Carousel.Caption>
-          <h1
-            style={{
-              color: `#89c853`,
-              fontSize: `3em`,
-              fontWeight: 800,
-              textShadow: `2px 2px 4px #000000`,
-            }}
-          >
+          <h1 className="carousel-heading">
             Rebuilding Together Litchfield County
           </h1>
-          <p style={{ color: `#000000`, fontSize: `1.5em` }}>
+          <p className="iAmARebuilder">
             I am a <span style={{ color: `#89c853` }}>[Re]</span>builder
           </p>
         </Carousel.Caption>
@@ -38,17 +31,10 @@ const ImgCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h1
-            style={{
-              color: `#89c853`,
-              fontSize: `3em`,
-              fontWeight: 800,
-              textShadow: `2px 2px 4px #000000`,
-            }}
-          >
+          <h1 className="carousel-heading">
             Rebuilding Together Litchfield County
           </h1>
-          <p style={{ color: `#000000`, fontSize: `1.5em` }}>
+          <p className="iAmARebuilder">
             I am a <span style={{ color: `#89c853` }}>[Re]</span>builder
           </p>
         </Carousel.Caption>
@@ -61,17 +47,10 @@ const ImgCarousel = () => {
         />
 
         <Carousel.Caption>
-          <h1
-            style={{
-              color: `#89c853`,
-              fontSize: `3em`,
-              fontWeight: 800,
-              textShadow: `2px 2px 4px #000000`,
-            }}
-          >
+          <h1 className="carousel-heading">
             Rebuilding Together Litchfield County
           </h1>
-          <p style={{ color: `#000000`, fontSize: `1.5em` }}>
+          <p className="iAmARebuilder">
             I am a <span style={{ color: `#89c853` }}>[Re]</span>builder
           </p>
         </Carousel.Caption>

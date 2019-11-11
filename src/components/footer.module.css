@@ -44,3 +44,9 @@
   text-decoration: none;
   color: #92c1af;
 }
+
+@media (max-width: 580px) {
+  .footer {
+    padding-bottom: 8px;
+  }
+}

@@ -124,6 +124,13 @@
   .service-list {
     padding-top: 80px;
   }
+  .intro-heading {
+    margin: 0 auto 20px;
+    font-size: 42px;
+  }
+  .vision-text {
+    margin-top: 10px;
+  }
 }
 
 .services {
@@ -228,12 +235,36 @@
   font-size: 1.05em;
 }
 
+.carousel-heading {
+  color: #89c853;
+  font-size: 3em;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.iAmARebuilder {
+  color: #ffffff;
+  font-size: 2em;
+}
+
 @media (max-width: 580px) {
   .mission-text {
     margin: 0 10px 30px 10px;
   }
   .about-text {
     margin: 0 10px;
+  }
+  .carousel-heading {
+    font-size: 1.22em;
+  }
+  .iAmARebuilder {
+    font-size: 0.75em;
+  }
+  .carousel-caption {
+    bottom: 0;
+  }
+  .caro-img {
+    height: 270px;
   }
 }
 
@@ -244,8 +275,4 @@
 .location-map {
   margin: 28px auto 38px;
   text-align: center;
-}
-
-.caro-img {
-  max-height: 800px;
 }
