@@ -276,3 +276,7 @@
   margin: 28px auto 38px;
   text-align: center;
 }
+
+.caro-img {
+  filter: brightness(75%);
+}

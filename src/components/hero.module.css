@@ -6,13 +6,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  filter: brightness(85%);
 }
 
 .heroWriting {
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #89c853;
@@ -31,4 +32,10 @@
 
 .turnGreen {
   color: #89c853;
+}
+
+@media (max-width: 768px) {
+  .heroHeading {
+    font-size: 2.5em;
+  }
 }
