@@ -280,3 +280,11 @@
 .caro-img {
   filter: brightness(75%);
 }
+
+.card-container-1 {
+  margin: 30px auto;
+}
+
+.card-container-2 {
+  margin: 30px auto;
+}

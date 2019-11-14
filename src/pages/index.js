@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Offer from "../components/Offer"
 import Hero from "../components/Hero"
+import Card from "../components/Card"
 
 import "../styles/index.css"
 import construction from "../images/construction.svg"
@@ -14,6 +15,28 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Hero />
     <div className="container-fluid index-intro">
+      <div className="row">
+        <div className="card-container-1">
+          <Card
+            title="Sponsor"
+            subtitle="Become a Sponsor"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu."
+            href="https://mattaz.com"
+            linkText="Dev Website"
+            className="col-sm-4"
+          />
+          </div>
+          <div className="card-container-2">
+          <Card
+            title="Volunteer"
+            subtitle="Become a Volunteer"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium. In iaculis nunc sed augue lacus viverra vitae congue eu."
+            href="https://mattaz.com"
+            linkText="Dev Website"
+            className="col-sm-4"
+          />
+        </div>
+      </div>
       <div className="row">
         <div className="col-md-6 intro-container">
           <h1 className="intro-heading">Our Mission:</h1>
