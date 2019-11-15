@@ -25,8 +25,8 @@ const IndexPage = () => (
             linkText="Dev Website"
             className="col-sm-4"
           />
-          </div>
-          <div className="card-container-2">
+        </div>
+        <div className="card-container-2">
           <Card
             title="Volunteer"
             subtitle="Become a Volunteer"
