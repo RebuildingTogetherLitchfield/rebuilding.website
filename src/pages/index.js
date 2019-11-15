@@ -5,6 +5,7 @@ import SEO from "../components/Seo"
 import Offer from "../components/Offer"
 import Hero from "../components/Hero"
 import Card from "../components/Card"
+import VolunteerCta from "../components/VolunteerCta"
 
 import "../styles/index.css"
 import construction from "../images/construction.svg"
@@ -110,6 +111,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <VolunteerCta />
   </Layout>
 )
 

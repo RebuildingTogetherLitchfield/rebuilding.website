@@ -183,7 +183,7 @@
 
 .about-page-start {
   margin-top: 28px;
-  margin-bottom: 48px;
+  margin-bottom: 8em;
 }
 
 .mission-text {
@@ -200,6 +200,24 @@
   -moz-box-shadow: 1px 9px 18px 0 rgba(104, 128, 104, 1);
   box-shadow: 1px 9px 18px 0 rgba(104, 128, 104, 1);
   margin: auto;
+}
+
+.fadeInImage {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+  animation-duration: 1s;
+  animation-name: fadeInImg;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadeInImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .orange-heading {

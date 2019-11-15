@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Header from "../components/Header"
+import VolunteerCta from "../components/VolunteerCta"
 
 const SecondPage = () => {
   return (
@@ -26,7 +27,7 @@ const SecondPage = () => {
           <img
             src="https://res.cloudinary.com/mattaz/image/upload/v1572459613/RebuildingTogether/2016-07-28_group.png"
             alt="Rebuilding Together Crew"
-            className="about-intro-img"
+            className="about-intro-img fadeInImage"
           />
         </div>
         <div className="row nondiscrimination">
@@ -112,6 +113,7 @@ const SecondPage = () => {
           </div>
         </div>
       </div>
+      <VolunteerCta />
     </Layout>
   )
 }

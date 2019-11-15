@@ -1,0 +1,71 @@
+.becomeVolunteer {
+  padding: 185px 0;
+  background-size: cover;
+  background-position: left top;
+}
+
+@media (max-width: 767px) {
+  .becomeVolunteer {
+    padding: 100px 0;
+  }
+}
+
+.becomeVolunteer .volunteerText {
+  background: #89c853;
+  padding: 68px 95px;
+}
+
+@media (max-width: 767px) {
+  .becomeVolunteer .volunteerText {
+    padding: 30px;
+  }
+}
+
+.becomeVolunteer .volunteerText h3 {
+  font-size: 46px;
+  font-weight: 400;
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .becomeVolunteer .volunteerText h3 {
+    font-size: 30px;
+  }
+}
+
+.becomeVolunteer .volunteerText p {
+  font-size: 16px;
+  color: #141414;
+  line-height: 28px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+  .becomeVolunteer .volunteerText p br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .becomeVolunteer .volunteerText p br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .becomeVolunteer .volunteerText p br {
+    display: none;
+  }
+}
+
+.becomeVolunteer .volunteerText a.boxed-btn4 {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.becomeVolunteer .volunteerText a.boxed-btn4:hover {
+  background: #fff;
+  color: #a70000 !important;
+}
