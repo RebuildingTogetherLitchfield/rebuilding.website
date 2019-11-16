@@ -13,13 +13,7 @@ import "./navigation.css"
 
 const Navigation = () => {
   return (
-    <Navbar
-      collapseOnSelect
-      expand="lg"
-      variant="light"
-      className="top_nav"
-      sticky="top"
-    >
+    <Navbar collapseOnSelect expand="lg" variant="light" className="top_nav">
       <Navbar.Brand href="https://rebuildingtogetherlitchfield.org">
         <img
           alt="Rebuilding Together Litchfield"

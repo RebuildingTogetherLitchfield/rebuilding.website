@@ -63,7 +63,7 @@
   text-align: center;
   position: relative;
   padding: 17px 0;
-  margin: 70px auto -15px;
+  margin: 50px auto -15px;
   max-width: 620px;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .offer-section {
-  margin: 60px auto 40px;
+  margin: 50px auto 40px;
 }
 
 .offer-heading {
@@ -109,6 +109,10 @@
   margin-left: -50px;
 }
 
+.blue-color:before {
+  background-color: #00a5c3;
+}
+
 .offer-text {
   font-size: 1.2em;
 }
@@ -119,18 +123,33 @@
 
 @media (max-width: 580px) {
   .offer-text {
-    margin-left: 10px;
+    margin-left: 15px;
+    margin-right: 13px;
   }
   .service-list {
     padding-top: 80px;
   }
   .intro-heading {
-    margin: 0 auto 20px;
+    margin: 75px auto 20px;
     font-size: 42px;
   }
   .vision-text {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
+  .index-intro {
+    margin-top: -10px;
+  }
+  .offer-heading {
+    margin: 0 auto 15px;
+  }
+  .offer-head-alt {
+    margin: 0 auto 55px;
+  }
+}
+
+.services-section {
+  margin-bottom: 85px;
 }
 
 .services {
@@ -265,6 +284,10 @@
   font-size: 2em;
 }
 
+.area-map {
+  padding-left: 25px;
+}
+
 @media (max-width: 580px) {
   .mission-text {
     margin: 0 10px 30px 10px;
@@ -283,6 +306,15 @@
   }
   .caro-img {
     height: 270px;
+  }
+  .services-section {
+    margin-bottom: 25px;
+  }
+  .services {
+    margin-top: 25px;
+  }
+  .area-map {
+    padding-left: 0;
   }
 }
 

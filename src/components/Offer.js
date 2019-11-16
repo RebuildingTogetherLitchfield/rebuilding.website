@@ -4,10 +4,10 @@ import house from "../images/womenBuildHouse.svg"
 
 const Offer = () => {
   return (
-    <section>
+    <section className="services-section">
       <div className="container offer-section">
         <div className="row col-sm-6-offset-2 offer-head">
-          <h2 className="offer-heading">Homeowner:</h2>
+          <h2 className="offer-heading blue-color">Homeowner:</h2>
         </div>
         <div className="row col-sm-6-offset-2">
           <p className="offer-text">
@@ -46,7 +46,20 @@ const Offer = () => {
             <img src={house} alt="Woman and House" className="service-svg" />
           </div>
           <div className="service-list col-sm-6-offset-2">
-            <h3 className="services-heading">Services for Homeowners</h3>
+            <h3
+              className="services-heading"
+              style={{
+                display: `block`,
+                fontSize: `22px`,
+                lineHeight: `28px`,
+                letterSpacing: `1px`,
+                padding: `20px 0 10px`,
+                textAlign: `center`,
+                fontWeight: 800,
+              }}
+            >
+              Services for Homeowners
+            </h3>
             <ul>
               <li>National Rebuild Day</li>
               <li>Contractors Network</li>

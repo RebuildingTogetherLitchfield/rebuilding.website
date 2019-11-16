@@ -22,7 +22,10 @@ const VolunteerCta = () => {
                 are always in need of skilled craftsman and people willing to
                 work!
               </p>
-              <a className="btn btn-danger" href="#">
+              <a
+                className="btn btn-danger"
+                href="https://rebuildingtogether.org"
+              >
                 Join Now
               </a>
             </div>

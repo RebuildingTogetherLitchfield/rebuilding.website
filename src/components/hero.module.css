@@ -1,13 +1,12 @@
 .heroImage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1543525324-9146d43c2a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80");
+  background-image: url("../images/hero2.png");
   height: 100vh;
   min-height: 600px;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
-  filter: brightness(85%);
+  filter: brightness(75%);
 }
 
 .heroWriting {
