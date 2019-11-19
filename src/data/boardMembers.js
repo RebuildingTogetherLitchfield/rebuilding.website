@@ -8,10 +8,10 @@ const boardMembers = [
   },
   {
     id: "7",
-    name: "The Rev. James Speer",
-    position: "St. Andrew’s Rectory",
+    name: "Cordelia Schoen",
+    position: "Board Member",
     excerpt:
-      "Father James brings the Rebuilding Together capabilities to Litchfield County leadership through his attendance at many county events and meetings.",
+      "Cordelia has assisted her grandmother, and our founder, Ceia, since this affiliate was founded in 2003, and still serves with us today as a board member.",
   },
   {
     id: "8",

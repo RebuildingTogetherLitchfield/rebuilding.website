@@ -51,7 +51,7 @@ const StrategicPlan = () => {
           <ul className="plan-text-list">
             <li>R T Homeowners Safe At Home Program</li>
             <li>
-              R T is responsible for construction budger, trainers and 'hands
+              R T is responsible for construction budget, trainers and 'hands
               on' equipment necessary using paid contract labor, when necessary,
               who are reliable and can/will respond quickly & are known and
               therefore trusted to be referred to older Year-Round Emergency
