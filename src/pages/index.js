@@ -9,11 +9,12 @@ import VolunteerCta from "../components/VolunteerCta"
 
 import "../styles/index.css"
 import construction from "../images/construction.svg"
+import heroImage from "../images/hero2.png"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero />
+    <Hero imageUrl={heroImage} height={`100vh`} />
     <div className="container-fluid index-intro">
       <div className="row">
         <div className="col-md-6 intro-image-container">

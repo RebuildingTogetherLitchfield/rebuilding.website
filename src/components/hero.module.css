@@ -1,6 +1,4 @@
 .heroImage {
-  background-image: url("../images/hero2.png");
-  height: 100vh;
   min-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;

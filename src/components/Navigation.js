@@ -46,7 +46,7 @@ const Navigation = () => {
             </Link>
           </div>
           <div className="nav_link bdr-left">
-            <Link className="menu_btn" to="/about-us/">
+            <Link className="menu_btn" to="/volunteer/">
               Volunteer
             </Link>
           </div>

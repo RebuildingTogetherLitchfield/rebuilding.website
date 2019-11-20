@@ -2,9 +2,15 @@ import React from "react"
 
 import styles from "./hero.module.css"
 
-const Hero = () => {
+const Hero = props => {
   return (
-    <div className={styles.heroImage}>
+    <div
+      className={styles.heroImage}
+      style={{
+        backgroundImage: `url(${props.imageUrl})`,
+        height: `${props.height}`,
+      }}
+    >
       <div className={styles.heroWriting}>
         <h1 className={styles.heroHeading}>
           Rebuilding Together Litchfield County
