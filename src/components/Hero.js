@@ -1,4 +1,5 @@
 import React from "react"
+import { navigate } from "gatsby"
 
 import styles from "./hero.module.css"
 
@@ -18,7 +19,15 @@ const Hero = props => {
         <p className={styles.heroText}>
           I am a <span className={styles.turnGreen}>[Re]</span>builder
         </p>
-        <button className="btn btn-success">Click to Volunteer</button>
+        <button
+          className="btn btn-success"
+          onClick={e => {
+            e.preventDefault()
+            navigate("/volunteer/")
+          }}
+        >
+          Click to Volunteer
+        </button>
       </div>
     </div>
   )
