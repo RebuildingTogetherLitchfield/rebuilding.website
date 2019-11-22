@@ -1,9 +1,11 @@
 import React from "react"
+import Button from "react-bootstrap/Button"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Header from "../components/Header"
 import volunteerHero from "../images/volunteerHero.png"
 import twoHouses from "../images/twoHouses.svg"
+import volImg from "../images/vol_img_2.jpg"
 
 const Volunteer = () => {
   return (
@@ -63,6 +65,86 @@ const Volunteer = () => {
             </div>
             <div className="col-sm-4 mx-auto">
               <img src={twoHouses} alt="Two Houses" className="mb-4" />
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row mt-3 justify-content-md-center">
+            <div className="col-sm-8">
+              <h2 className="center" style={{ marginTop: `35px` }}>
+                As a potential volunteer, we’d like you to be aware of what we
+                repair. Generally, we concentrate on repairs that make a home
+                safe, secure and weatherproof.
+              </h2>
+            </div>
+            <div className="row mt-3" style={{ marginBottom: `45px` }}>
+              <div className="col-sm-5">
+                <img
+                  src={volImg}
+                  alt="Man Cutting Board"
+                  className="vol_img"
+                  style={{
+                    borderRadius: `45px`,
+                    marginTop: `35px`,
+                    marginBottom: `45px`,
+                    boxShadow: `10px 10px 10px 0px #bababa`,
+                  }}
+                />
+              </div>
+              <ul
+                className="col-sm-6 mx-auto"
+                style={{ listStyleType: `square` }}
+              >
+                <h3
+                  style={{
+                    color: `#1a1a1a`,
+                    textAlign: `left`,
+                    marginLeft: `5px`,
+                  }}
+                >
+                  Our main priorities are:
+                </h3>
+                <li className="ml-4">
+                  Alleviating substandard conditions and safety hazards in a
+                  home.
+                </li>
+                <li className="ml-4">
+                  Providing home modifications for better accessibility and
+                  independence of elderly/ disabled individuals.
+                </li>
+                <li className="ml-4">
+                  Increasing energy efficiency and weatherization in a home. We
+                  have the ability to do most any repair in a home.
+                </li>
+                <h3
+                  style={{
+                    color: `#1a1a1a`,
+                    textAlign: `left`,
+                    marginLeft: `5px`,
+                  }}
+                >
+                  What we don't repair:
+                </h3>
+                <li className="ml-4">Major HVAC</li>
+                <li className="ml-4">Major Concrete Work</li>
+                <li className="ml-4">Aesthetic Remodeling</li>
+                <li className="ml-4">
+                  Rental homes, Multi-family homes or Investment properties
+                </li>
+                <li className="ml-4">
+                  Homes with Lead Based Paint - Painted prior to 1978
+                </li>
+              </ul>
+            </div>
+            <div className="row justify-content-md-center">
+              <div className="col-sm-12 center">
+                <h2 className="mt-3">
+                  Fill out our Quick form to become a Volunteer!
+                </h2>
+                <Button variant="success" className="mb-3">
+                  Go to Form
+                </Button>
+              </div>
             </div>
           </div>
         </div>
