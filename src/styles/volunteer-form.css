@@ -1,0 +1,143 @@
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+}
+
+form {
+  padding-top: 16px;
+  border-radius: 15px;
+}
+
+.vol-form-heading {
+  margin-top: 26px;
+}
+
+.form-label {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+}
+
+input[type="text"],
+[type="number"],
+[type="email"],
+[type="tel"] {
+  width: 100%;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 636px;
+  height: 120px;
+  padding: 6px 10px;
+  border-radius: 15px;
+}
+
+textarea:focus {
+  outline: 0;
+  border: 2px solid red;
+  border-radius: 15px;
+  background-color: rgba(51, 204, 102, 0.2);
+}
+input[name="name"] {
+  width: 636px;
+}
+
+input[name="name"]:focus {
+  outline: 0;
+  border: 2px solid red;
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+input[name="address1"] {
+  width: 636px;
+}
+
+input[name="address1"]:focus {
+  outline: 0;
+  border: 2px solid red;
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+input[name="address2"] {
+  width: 636px;
+}
+
+input[name="address2"]:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+input[name="phone"] {
+  width: 268px;
+}
+
+input[name="phone"]:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+input[name="email"] {
+  width: 268px;
+}
+
+input[name="email"]:focus {
+  outline: 0;
+  border: 2px solid red;
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+input[name="city"]:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+input[name="state"]:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+input[name="zip"]:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+}
+.city {
+  padding-right: 5px;
+}
+
+.state {
+  padding-right: 5px;
+}
+
+.phone {
+  padding-right: 5px;
+}
+
+.send-btn {
+  padding-bottom: 26px;
+}
+
+@media (max-width: 768px) {
+  textarea {
+    width: 80vw;
+    height: 120px;
+    padding: 6px 10px;
+  }
+
+  input[name="name"] {
+    width: 80vw;
+  }
+
+  input[name="address1"] {
+    width: 80vw;
+  }
+
+  input[name="address2"] {
+    width: 80vw;
+  }
+  input[name="city"] {
+    width: 168px;
+  }
+  input[name="state"] {
+    width: 168px;
+  }
+  input[name="zip"] {
+    width: 168px;
+  }
+}

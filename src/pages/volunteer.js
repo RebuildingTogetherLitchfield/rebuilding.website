@@ -1,4 +1,5 @@
 import React from "react"
+import { navigate } from "gatsby"
 import Button from "react-bootstrap/Button"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
@@ -78,7 +79,7 @@ const Volunteer = () => {
               </h2>
             </div>
             <div className="row mt-3" style={{ marginBottom: `45px` }}>
-              <div className="col-sm-5">
+              <div className="col-sm-2 col-md-5">
                 <img
                   src={volImg}
                   alt="Man Cutting Board"
@@ -138,11 +139,18 @@ const Volunteer = () => {
             </div>
             <div className="row justify-content-md-center">
               <div className="col-sm-12 center">
-                <h2 className="mt-3">
-                  Fill out our Quick form to become a Volunteer!
+                <h2 className="mt-3 ml-1">
+                  Let's get started becoming a volunteer!
                 </h2>
-                <Button variant="success" className="mb-3">
-                  Go to Form
+                <Button
+                  variant="success"
+                  className="mb-3"
+                  onClick={event => {
+                    event.preventDefault()
+                    navigate("/volunteer-form/")
+                  }}
+                >
+                  Sign Up!
                 </Button>
               </div>
             </div>
