@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import styles from "./volunteerCta.module.css"
 import backgroundImage from "../images/volBg.png"
@@ -22,12 +23,9 @@ const VolunteerCta = () => {
                 are always in need of skilled craftsman and people willing to
                 work!
               </p>
-              <a
-                className="btn btn-danger"
-                href="https://rebuildingtogether.org"
-              >
-                Join Now
-              </a>
+              <Link to="/volunteer/" className="btn btn-danger">
+                Join Us
+              </Link>
             </div>
           </div>
         </div>

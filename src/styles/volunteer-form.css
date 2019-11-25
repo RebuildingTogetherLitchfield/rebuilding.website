@@ -31,13 +31,11 @@ textarea {
   width: 636px;
   height: 120px;
   padding: 6px 10px;
-  border-radius: 15px;
+  border-radius: 6px;
 }
 
 textarea:focus {
-  outline: 0;
-  border: 2px solid red;
-  border-radius: 15px;
+  border-radius: 6px;
   background-color: rgba(51, 204, 102, 0.2);
 }
 input[name="name"] {
@@ -45,8 +43,6 @@ input[name="name"] {
 }
 
 input[name="name"]:focus {
-  outline: 0;
-  border: 2px solid red;
   background-color: rgba(51, 204, 102, 0.2);
 }
 
@@ -55,8 +51,6 @@ input[name="address1"] {
 }
 
 input[name="address1"]:focus {
-  outline: 0;
-  border: 2px solid red;
   background-color: rgba(51, 204, 102, 0.2);
 }
 
@@ -81,8 +75,6 @@ input[name="email"] {
 }
 
 input[name="email"]:focus {
-  outline: 0;
-  border: 2px solid red;
   background-color: rgba(51, 204, 102, 0.2);
 }
 

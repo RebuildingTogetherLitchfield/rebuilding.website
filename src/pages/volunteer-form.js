@@ -40,7 +40,7 @@ export default function Contact() {
       <div className="container center">
         <h2 className="vol-form-heading">Become a Volunteer!</h2>
         <form
-          name="contact"
+          name="volunteer"
           method="post"
           action="/thanks/"
           data-netlify="true"
@@ -56,9 +56,20 @@ export default function Contact() {
           </p>
           <p>
             <label className="form-label">
-              Your name:
+              Your Name:
               <br />
               <input type="text" name="name" required onChange={handleChange} />
+              <br />
+              <span
+                style={{
+                  fontSize: `14px`,
+                  fontWeight: `normal`,
+                  color: `red`,
+                  marginLeft: `5px`,
+                }}
+              >
+                *required
+              </span>
             </label>
           </p>
           <p>
@@ -71,6 +82,17 @@ export default function Contact() {
                 required
                 onChange={handleChange}
               />
+              <br />
+              <span
+                style={{
+                  fontSize: `14px`,
+                  fontWeight: `normal`,
+                  color: `red`,
+                  marginLeft: `5px`,
+                }}
+              >
+                *required
+              </span>
             </label>
           </p>
           <p>
@@ -104,13 +126,15 @@ export default function Contact() {
               <input
                 type="tel"
                 name="phone"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 placeholder="123-456-7890"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 onChange={handleChange}
               />
+              <br />
+              &nbsp;
             </label>
             <label className="form-label">
-              Your email:
+              Your Email:
               <br />
               <input
                 type="email"
@@ -118,6 +142,17 @@ export default function Contact() {
                 required
                 onChange={handleChange}
               />
+              <br />
+              <span
+                style={{
+                  fontSize: `14px`,
+                  fontWeight: `normal`,
+                  color: `red`,
+                  marginLeft: `5px`,
+                }}
+              >
+                *required
+              </span>
             </label>
           </p>
           <p>
@@ -129,11 +164,22 @@ export default function Contact() {
                 placeholder="How would you like to volunteer?"
                 onChange={handleChange}
               />
+              <br />
+              <span
+                style={{
+                  fontSize: `14px`,
+                  fontWeight: `normal`,
+                  color: `red`,
+                  marginLeft: `5px`,
+                }}
+              >
+                *required
+              </span>
             </label>
           </p>
           <p className="send-btn">
             <button className="btn btn-success" type="submit">
-              Send
+              Volunteer
             </button>
           </p>
         </form>
