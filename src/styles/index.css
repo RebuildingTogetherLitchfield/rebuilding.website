@@ -56,7 +56,7 @@
 }
 
 .vision-heading {
-  font-size: 24px;
+  font-size: 28px;
   text-transform: capitalize;
   font-weight: 700;
   color: #000000;
@@ -85,7 +85,7 @@
 }
 
 .offer-heading {
-  font-size: 24px;
+  font-size: 28px;
   text-transform: capitalize;
   font-weight: 700;
   color: #000000;
@@ -337,4 +337,63 @@
 
 .card-container-2 {
   margin: 30px auto;
+}
+
+.get-involved {
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.getInvolved-heading {
+  text-align: center;
+  margin: 25px auto;
+  font-size: 38px;
+}
+
+.getInvolved-sub {
+  text-align: center;
+  margin: 0 auto 18px;
+  font-size: 26px;
+}
+
+.percentage {
+  font-size: 46px;
+  color: red;
+}
+
+.goal span {
+  width: 100%;
+}
+
+.goal span:first-child {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.goal p {
+  margin-bottom: 0;
+}
+
+.donate-link {
+  width: 100%;
+}
+
+.rebuildDay {
+  margin: 35px auto;
+}
+
+.rebuildDay-heading {
+  font-size: 36px;
+}
+
+.rebuildDay-text {
+  font-size: 22px;
+}
+
+.rebuildDay-list {
+  margin: auto;
+}
+
+.rebuildDay-explain {
+  margin: auto;
 }

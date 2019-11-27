@@ -6,6 +6,8 @@ import Offer from "../components/Offer"
 import Hero from "../components/Hero"
 import CoverageMap from "../components/CoverageMap"
 import VolunteerCta from "../components/VolunteerCta"
+import ProgressBar from "react-bootstrap/ProgressBar"
+import CountUp from "react-countup"
 
 import "../styles/index.css"
 import construction from "../images/construction.svg"
@@ -38,6 +40,87 @@ const IndexPage = () => (
     </div>
     <Offer />
     <CoverageMap />
+    <div className="container get-involved">
+      <div className="row">
+        <h4 className="getInvolved-heading center">How to get involved:</h4>
+      </div>
+      <div className="row">
+        <h5 className="getInvolved-sub">Donations &amp; Grants</h5>
+      </div>
+      <div className="row">
+        <div className="col-sm-12">
+          <ProgressBar
+            animated
+            variant="success"
+            now={56}
+            style={{ height: `45px` }}
+          />
+        </div>
+      </div>
+      <div className="row justify-content-center">
+        <div className="getInvolved-text col-md-8">
+          <div class="text mt-4 d-md-flex">
+            <div class="one d-flex">
+              <div class="mr-4">
+                <h2 className="percentage">
+                  <CountUp end={56} />%
+                </h2>
+              </div>
+              <div class="goal">
+                <p class="d-flex">
+                  <span>Collected:</span>
+                  <span>$55,000</span>
+                </p>
+                <p class="d-flex">
+                  <span>Goal:</span>
+                  <span>$99,500</span>
+                </p>
+              </div>
+            </div>
+            <div class="donate-link text-md-right">
+              <p>
+                <a
+                  href="https://secure.anedot.com/rebuilding-together-litchfield-county/donate"
+                  class="btn btn-success"
+                >
+                  Donate now
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row rebuildDay">
+        <h2 className="rebuildDay-heading col-sm-12 center">
+          Rebuild Day - Every Year on the last saturday of April
+        </h2>
+        <p className="rebuildDay-text col-12 center">
+          There is a great need for volunteers on Rebuild Day!
+        </p>
+      </div>
+      <div className="row">
+        <div className="rebuildDay-explain col-sm-6">
+          <p>
+            Our 'go-to' experts at every site are the skilled volunteers and
+            technical support staff who return year after year to lead the
+            Rebuild Day teams – they always appreciate assistance. Please take a
+            look at our website, set aside the last Saturday in April to help
+            out, and be in touch. We would love to hear from you!
+          </p>
+        </div>
+        <div className="rebuildDay-list col-sm-6 col-md-5">
+          <ul>
+            <li>Helpers</li>
+            <li>Painters</li>
+            <li>Assistants to Carpenters &amp; Masons</li>
+            <li>Materials Pick-up runners</li>
+            <li>Photographers</li>
+            <li>Lunch Preparers &amp; Delivers</li>
+            <li>Even Cookie Bakers!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <VolunteerCta />
   </Layout>
 )

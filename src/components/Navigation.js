@@ -37,11 +37,11 @@ const Navigation = () => {
           className="donate-btn"
           href="https://secure.anedot.com/rebuilding-together-litchfield-county/donate"
         >
-          &hearts; Click to Donate
+          &hearts; Donate
         </Button>
         <Nav className="right-nav">
           <div className="nav_link bdr-left">
-            <Link className="menu_btn" to="/about-us/">
+            <Link className="menu_btn" to="/sponsor/">
               Sponsor
             </Link>
           </div>

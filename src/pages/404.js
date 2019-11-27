@@ -19,7 +19,7 @@ const NotFoundPage = () => {
         <button onClick={goBack} className="btn btn-outline-success mb-4">
           Go Back
         </button>
-        <img src={error} atl="Crane with page under construction" />
+        <img src={error} alt="Crane with page under construction" />
       </div>
     </Layout>
   )

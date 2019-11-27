@@ -46,14 +46,14 @@ const SecondPage = () => {
         <div className="row why-service">
           <h2 className="orange-heading">Why Are These Services Needed?</h2>
           <div className="about-text">
-            The number of low-income homeowners increases each year. The current
-            24 million low-income homeowner families are expected to grow to an
-            astonishing 28.5 million by the year 2010. This growth means that
-            more and more families are placed in the position of choosing
-            between vital necessities, such as food or medicine, or a roof that
-            does not leak. Rebuilding Together works to ensure that as many of
-            those families as possible do not have to make these difficult
-            choices.{" "}
+            The number of low-income homeowners increases every year. The
+            current 24 million low-income homeowner families are expected to
+            grow to an astonishing 28.5 million by the year 2010. This growth
+            means that more and more families are placed in the position of
+            choosing between vital necessities, such as food or medicine, or a
+            roof that does not leak. Rebuilding Together works to ensure that as
+            many of those families as possible do not have to make these
+            difficult choices.{" "}
           </div>
         </div>
         <div className="row work-type">
