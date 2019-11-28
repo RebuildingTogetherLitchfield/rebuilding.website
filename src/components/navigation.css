@@ -149,22 +149,6 @@
   color: #244411;
 }
 
-.header-main {
-  background: #7ac143;
-  margin: auto;
-  min-height: 150px;
-  color: #000;
-}
-
-.header-container {
-  text-align: center;
-}
-
-.header-heading {
-  padding-top: 50px;
-  font-size: 5vh;
-}
-
 .small-word {
   font-size: 18px;
   display: block;

@@ -38,7 +38,10 @@ export default function Contact() {
       <Seo title="Volunteer Sign Up Form" />
       <Header pageHeading="Volunteer Sign Up" />
       <div className="container center">
-        <h2 className="vol-form-heading">Become a Volunteer!</h2>
+        <h2 className="vol-form-heading">
+          I want to become a{" "}
+          <span className="font-italic text-uppercase">Volunteer!</span>{" "}
+        </h2>
         <form
           name="volunteer"
           method="post"
@@ -58,7 +61,13 @@ export default function Contact() {
             <label className="form-label">
               Your Name:
               <br />
-              <input type="text" name="name" required onChange={handleChange} />
+              <input
+                type="text"
+                name="name"
+                required
+                minlength="3"
+                onChange={handleChange}
+              />
               <br />
               <span
                 style={{
@@ -79,20 +88,10 @@ export default function Contact() {
               <input
                 type="text"
                 name="address1"
-                required
+                minLength="3"
                 onChange={handleChange}
               />
               <br />
-              <span
-                style={{
-                  fontSize: `14px`,
-                  fontWeight: `normal`,
-                  color: `red`,
-                  marginLeft: `5px`,
-                }}
-              >
-                *required
-              </span>
             </label>
           </p>
           <p>
@@ -116,7 +115,12 @@ export default function Contact() {
             <label className="form-label zip">
               Zip Code:
               <br />
-              <input type="number" name="zip" onChange={handleChange} />
+              <input
+                type="text"
+                name="zip"
+                pattern="(\d{5}([\-]\d{4})?)"
+                onChange={handleChange}
+              />
             </label>
           </p>
           <p>
@@ -124,6 +128,7 @@ export default function Contact() {
               Phone:
               <br />
               <input
+                required
                 type="tel"
                 name="phone"
                 placeholder="123-456-7890"
@@ -140,6 +145,7 @@ export default function Contact() {
                 type="email"
                 name="email"
                 required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 onChange={handleChange}
               />
               <br />
@@ -162,6 +168,8 @@ export default function Contact() {
               <textarea
                 name="message"
                 placeholder="How would you like to volunteer?"
+                required
+                minLength="5"
                 onChange={handleChange}
               />
               <br />
