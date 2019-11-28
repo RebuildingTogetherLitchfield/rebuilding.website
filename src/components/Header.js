@@ -12,12 +12,7 @@ const Header = props => {
   return (
     <header className="header-main" style={styles}>
       <div className="header-container" style={{ textAlign: `center` }}>
-        <h2
-          className="header-heading"
-          style={{ paddingTop: `50px`, fontSize: `5vh` }}
-        >
-          {props.pageHeading}
-        </h2>
+        <h2 className="header-heading">{props.pageHeading}</h2>
       </div>
     </header>
   )
