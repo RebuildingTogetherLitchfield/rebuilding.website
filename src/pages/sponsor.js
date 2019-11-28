@@ -31,6 +31,7 @@ const Sponsor = () => {
             src={workLeft}
             className="col-sm-5 left-image"
             style={{ marginBottom: `20px` }}
+            alt="Worker cutting some wood"
           />
           <div className="col-sm-7">
             <h2>Sponsors are the muscle in Rebuilding Together</h2>
