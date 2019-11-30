@@ -14,7 +14,7 @@ const CoverageMap = () => {
       <div className="row">
         <div className="col-lg-4 col-md-3">
           <h3 style={{ fontSize: `22px`, paddingLeft: `15px` }}>
-            What area do we service?
+            What areas do we service?
           </h3>
           <p className="offer-text">
             There are four different locations for Rebuilding Together in the

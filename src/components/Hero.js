@@ -26,7 +26,7 @@ const Hero = props => {
             navigate("/volunteer/")
           }}
         >
-          Click to Volunteer
+          Become a Volunteer
         </button>
       </div>
     </div>

@@ -101,7 +101,7 @@ const IndexPage = () => {
         </div>
         <div className="row rebuildDay">
           <h2 className="rebuildDay-heading col-sm-12 center">
-            Rebuild Day - Every Year on the last saturday of April
+            Rebuild Day - Every Year on the last Saturday of April
           </h2>
           <p className="rebuildDay-text col-12 center">
             There is a great need for volunteers on Rebuild Day!

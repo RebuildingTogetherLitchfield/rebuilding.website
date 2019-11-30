@@ -11,7 +11,7 @@ function encode(data) {
     .join("&")
 }
 
-export default function Contact() {
+export default function VolunteerForm() {
   const [state, setState] = React.useState({})
 
   const handleChange = e => {
