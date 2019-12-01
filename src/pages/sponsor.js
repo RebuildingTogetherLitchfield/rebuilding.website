@@ -1,8 +1,11 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Header from "../components/Header"
 import CountUp from "react-countup"
+
+import LogoCarousel from "../components/LogoCarousel"
 import workLeft from "../images/workerLeft.png"
 
 const Sponsor = () => {
@@ -10,7 +13,7 @@ const Sponsor = () => {
     <Layout>
       <Seo title="Sponsor" />
       <Header pageHeading="Become a Sponsor!!" />
-      <div className="container">
+      <div className="container mb-4">
         <div className="row">
           <h1
             className="sponsor-heading"
@@ -22,6 +25,20 @@ const Sponsor = () => {
             </span>{" "}
             people since we started!!
           </h1>
+        </div>
+        <div className="row">
+          <h2 className="become" style={{ margin: `auto` }}>
+            To Become a Sponsor Click Here:
+          </h2>
+        </div>
+        <div className="row">
+          <Link
+            to="/sponsor-form/"
+            className="btn btn-success"
+            style={{ margin: `10px auto` }}
+          >
+            Sign Up
+          </Link>
         </div>
         <div
           className="row"
@@ -74,6 +91,7 @@ const Sponsor = () => {
           </div>
         </div>
       </div>
+      <LogoCarousel />
     </Layout>
   )
 }
