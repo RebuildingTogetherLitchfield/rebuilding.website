@@ -46,27 +46,32 @@ textarea:focus:valid {
   outline: 0;
   border: solid 2px #66b266;
 }
-input[name="name"] {
+input[name="name"],
+input[name="company"] {
   width: 636px;
 }
 
-input[name="name"]:focus {
+input[name="name"]:focus,
+input[name="company"]:focus {
   background-color: rgba(51, 204, 102, 0.2);
   outline: 0;
   border: solid 2px #ef7385;
 }
 
-input[name="name"]:focus:valid {
+input[name="name"]:focus:valid,
+input[name="company"]:focus:valid {
   background-color: rgba(51, 204, 102, 0.2);
   outline: 0;
   border: solid 2px #66b266;
 }
 
-input[name="address1"] {
+input[name="address1"],
+input[name="title"] {
   width: 636px;
 }
 
-input[name="address1"]:focus {
+input[name="address1"]:focus,
+input[name="title"]:focus {
   background-color: rgba(51, 204, 102, 0.2);
 }
 

@@ -37,7 +37,7 @@ const Sponsor = () => {
             className="btn btn-success"
             style={{ margin: `10px auto` }}
           >
-            Sign-Up
+            Sign Up
           </Link>
         </div>
         <div
