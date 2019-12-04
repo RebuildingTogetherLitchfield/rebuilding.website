@@ -1,8 +1,8 @@
-import React from "react"
 import { navigate } from "gatsby"
+import React from "react"
+import Header from "../components/Header"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-import Header from "../components/Header"
 import "../styles/volunteer-form.css"
 
 function encode(data) {
@@ -50,7 +50,7 @@ export default function VolunteerForm() {
           data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="volunteer" />
           <p hidden>
             <label>
               Don’t fill this out:{" "}
@@ -128,7 +128,6 @@ export default function VolunteerForm() {
               Phone:
               <br />
               <input
-                required
                 type="tel"
                 name="phone"
                 placeholder="123-456-7890"

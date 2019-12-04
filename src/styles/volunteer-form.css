@@ -141,24 +141,38 @@ input[name="zip"]:focus {
     padding: 6px 10px;
   }
 
-  input[name="name"] {
+  input[name="name"],
+  input[name="company"],
+  input[name="address1"],
+  input[name="address2"],
+  input[name="title"] {
     width: 80vw;
   }
 
-  input[name="address1"] {
-    width: 80vw;
-  }
-
-  input[name="address2"] {
-    width: 80vw;
-  }
-  input[name="city"] {
-    width: 168px;
-  }
-  input[name="state"] {
-    width: 168px;
-  }
+  input[name="city"],
+  input[name="state"],
   input[name="zip"] {
     width: 168px;
   }
+}
+
+.startCheck {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+
+fieldset {
+  margin-top: 45px;
+  border-radius: 6px;
+  width: 636px;
+}
+
+legend {
+  width: 336px;
+}
+.checkbox-desc {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 0.8rem;
 }

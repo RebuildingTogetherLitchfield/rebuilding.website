@@ -1,8 +1,8 @@
-import React from "react"
 import { navigate } from "gatsby"
+import React from "react"
+import Header from "../components/Header"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-import Header from "../components/Header"
 import "../styles/volunteer-form.css"
 
 function encode(data) {
@@ -50,7 +50,7 @@ export default function SponsorForm() {
           data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="sponsor" />
           <p hidden>
             <label>
               Don’t fill this out:{" "}
@@ -65,7 +65,7 @@ export default function SponsorForm() {
                 type="text"
                 name="name"
                 required
-                minlength="3"
+                minLength="3"
                 onChange={handleChange}
               />
               <br />
@@ -101,6 +101,7 @@ export default function SponsorForm() {
               <input
                 type="text"
                 name="company"
+                required
                 minLength="3"
                 onChange={handleChange}
               />
@@ -172,7 +173,16 @@ export default function SponsorForm() {
                 onChange={handleChange}
               />
               <br />
-              &nbsp;
+              <span
+                style={{
+                  fontSize: `14px`,
+                  fontWeight: `normal`,
+                  color: `red`,
+                  marginLeft: `5px`,
+                }}
+              >
+                *required
+              </span>
             </label>
             <label className="form-label">
               Your Email:
@@ -197,30 +207,136 @@ export default function SponsorForm() {
               </span>
             </label>
           </p>
-          <p>
-            <label className="form-label">
-              Message:
-              <br />
-              <textarea
-                name="message"
-                placeholder="How would you like to volunteer?"
-                required
-                minLength="5"
-                onChange={handleChange}
-              />
-              <br />
-              <span
-                style={{
-                  fontSize: `14px`,
-                  fontWeight: `normal`,
-                  color: `red`,
-                  marginLeft: `5px`,
-                }}
-              >
-                *required
-              </span>
-            </label>
-          </p>
+          <div className="startCheck">
+            <fieldset>
+              <legend className="checkbox-label">
+                My Organization Can Offer:
+              </legend>
+              <span className="checkbox-desc">(Check all that apply)</span>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="5 volunteers"
+                    onChange={handleChange}
+                  />{" "}
+                  5 Volunteers
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="5-10 volunteers"
+                    onChange={handleChange}
+                  />{" "}
+                  5-10 Volunteers
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="10 or more volunteers"
+                    onChange={handleChange}
+                  />{" "}
+                  10 or More Volunteers
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="pro plumber"
+                    onChange={handleChange}
+                  />{" "}
+                  Professional Plumber
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="pro carpenter"
+                    onChange={handleChange}
+                  />{" "}
+                  Professional Carpenter
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="pro electrician"
+                    onChange={handleChange}
+                  />{" "}
+                  Professional Electrician
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="other tradesman"
+                    onChange={handleChange}
+                  />{" "}
+                  Other Professional Tradesman
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="$250-500"
+                    onChange={handleChange}
+                  />{" "}
+                  $250 - $500 Donation
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="$500-750"
+                    onChange={handleChange}
+                  />{" "}
+                  $500 - $750 Donation
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="$750-1000"
+                    onChange={handleChange}
+                  />{" "}
+                  $750 - $1000 Donation
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="offer"
+                    value="$1000+"
+                    onChange={handleChange}
+                  />{" "}
+                  $1000+ Donation
+                </label>
+              </p>
+            </fieldset>
+          </div>
+
           <p className="send-btn">
             <button className="btn btn-success" type="submit">
               Become a Sponsor
