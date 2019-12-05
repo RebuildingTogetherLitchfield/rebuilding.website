@@ -165,14 +165,44 @@ input[name="zip"]:focus {
 fieldset {
   margin-top: 45px;
   border-radius: 6px;
+  border: solid 2px #7ac143;
   width: 636px;
 }
 
 legend {
   width: 336px;
+  text-shadow: 2px 2px 3px #7ac143;
+  font-size: 1.2em;
+  border-top: 2px solid #66b266;
+  border-left: 2px solid #66b266;
+  border-right: 2px solid #66b266;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  padding: 3px;
 }
 .checkbox-desc {
   display: block;
   margin-bottom: 25px;
   font-size: 0.8rem;
+}
+
+iframe {
+  height: 800px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    height: 1268px;
+  }
+  fieldset {
+    width: 100%;
+    border: none;
+  }
+}
+
+#contact-email {
+  width: 636px;
 }

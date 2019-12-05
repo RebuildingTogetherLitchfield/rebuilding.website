@@ -336,7 +336,6 @@ export default function SponsorForm() {
               </p>
             </fieldset>
           </div>
-
           <p className="send-btn">
             <button className="btn btn-success" type="submit">
               Become a Sponsor

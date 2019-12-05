@@ -1,14 +1,14 @@
 import React from "react"
 
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import Seo from "../components/Seo"
 import Header from "../components/Header"
 import VolunteerCta from "../components/VolunteerCta"
 
 const SecondPage = () => {
   return (
     <Layout>
-      <SEO title="About Us" />
+      <Seo title="About Us" />
       <Header pageHeading="About Rebuilding Together Litchfield County" />
       <div className="container about-page-start">
         <div className="row">

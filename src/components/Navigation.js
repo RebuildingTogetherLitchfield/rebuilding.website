@@ -29,7 +29,7 @@ const Navigation = () => {
         style={{ marginRight: `10px` }}
       />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <a href="https://www.facebook.com/Rebuilding-Together-of-Litchfield-County-1704567566428168/">
+        <a href="https://www.facebook.com/Rebuildingtogetherlitchfield/">
           <img src={fbLogo} className="fb-logo" alt="Facebook" />
         </a>
         <Button
@@ -92,7 +92,7 @@ const Navigation = () => {
           </NavDropdown>
 
           <div className="nav_link bdr-left">
-            <Link className="menu_btn" to="/about-us/">
+            <Link className="menu_btn" to="/contact-us/">
               Contact Us
             </Link>
           </div>
