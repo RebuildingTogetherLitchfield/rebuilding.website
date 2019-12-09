@@ -206,3 +206,39 @@ iframe {
 #contact-email {
   width: 636px;
 }
+
+@media (max-width: 768px) {
+  #contact-email {
+    width: 80vw;
+  }
+}
+
+.contact-form-heading {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.contact-heading {
+  text-align: center;
+  margin: auto;
+}
+
+.form-column {
+  text-align: center;
+}
+
+.label-text {
+  text-align: left;
+}
+
+.picture-column {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.keep-calm {
+  max-height: 360px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 35px 20px #777;
+}

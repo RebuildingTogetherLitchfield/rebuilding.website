@@ -3,7 +3,7 @@ import { navigate } from "gatsby-link"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Header from "../components/Header"
-import keepCalm from "../images/keepCalm.png"
+import superpower from "../images/superpower.png"
 import "../styles/volunteer-form.css"
 
 function encode(data) {
@@ -38,58 +38,60 @@ export default function Contact() {
     <Layout>
       <Seo title="Contact Us" />
       <Header pageHeading="Contact Us" />
-      <div className="container-fluid ml-4">
-        <div className="row col-sm-6">
-          <h1>Contact</h1>
+      <div className="container-fluid">
+        <div className="row col-sm-12 contact-form-heading">
+          <h1 className="contact-heading">Get in Touch!</h1>
         </div>
-        <div className="row">
-          <form
-            name="contact"
-            method="post"
-            action="/thanks/"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            onSubmit={handleSubmit}
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <p hidden>
-              <label>
-                Don’t fill this out:{" "}
-                <input name="bot-field" onChange={handleChange} />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your name:
-                <br />
-                <input type="text" name="name" onChange={handleChange} />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your email:
-                <br />
-                <input
-                  type="email"
-                  name="email"
-                  id="contact-email"
-                  onChange={handleChange}
-                />
-              </label>
-            </p>
-            <p>
-              <label>
-                Message:
-                <br />
-                <textarea name="message" onChange={handleChange} />
-              </label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
-          <div className="row pl-2">
-            <img src={keepCalm} alt="Keep Calm" className="col-sm-6" />
+        <div className="row form-column">
+          <div className="contact-form col-sm-6">
+            <form
+              name="contact"
+              method="post"
+              action="/thanks/"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p hidden>
+                <label className="label-text">
+                  Don’t fill this out:{" "}
+                  <input name="bot-field" onChange={handleChange} />
+                </label>
+              </p>
+              <p>
+                <label className="label-text">
+                  Your name:
+                  <br />
+                  <input type="text" name="name" onChange={handleChange} />
+                </label>
+              </p>
+              <p>
+                <label className="label-text">
+                  Your email:
+                  <br />
+                  <input
+                    type="email"
+                    name="email"
+                    id="contact-email"
+                    onChange={handleChange}
+                  />
+                </label>
+              </p>
+              <p>
+                <label className="label-text">
+                  Message:
+                  <br />
+                  <textarea name="message" onChange={handleChange} />
+                </label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
+          </div>
+          <div className="col-sm-6 picture-column">
+            <img src={superpower} alt="Keep Calm" className="keep-calm" />
           </div>
         </div>
       </div>
