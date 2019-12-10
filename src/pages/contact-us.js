@@ -3,6 +3,7 @@ import { navigate } from "gatsby-link"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Header from "../components/Header"
+import ContactMap from "../components/ContactMap"
 import superpower from "../images/superpower.png"
 import "../styles/volunteer-form.css"
 
@@ -43,7 +44,7 @@ export default function Contact() {
           <h1 className="contact-heading">Get in Touch!</h1>
         </div>
         <div className="row form-column">
-          <div className="contact-form col-sm-6">
+          <div className="contact-form col-lg-6">
             <form
               name="contact"
               method="post"
@@ -90,10 +91,13 @@ export default function Contact() {
               </p>
             </form>
           </div>
-          <div className="col-sm-6 picture-column">
+          <div className="col-lg-6 picture-column">
             <img src={superpower} alt="Keep Calm" className="keep-calm" />
           </div>
         </div>
+      </div>
+      <div className="container">
+        <ContactMap />
       </div>
     </Layout>
   )
