@@ -213,6 +213,10 @@ iframe {
   }
 }
 
+.contact-first-row {
+  margin-bottom: 85px;
+}
+
 .contact-form-heading {
   text-align: center;
   margin: 20px auto;

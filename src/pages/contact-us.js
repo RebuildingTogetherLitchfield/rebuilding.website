@@ -3,7 +3,7 @@ import { navigate } from "gatsby-link"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Header from "../components/Header"
-import ContactMap from "../components/ContactMap"
+import ContactUsMap from "../components/ContactUsMap"
 import superpower from "../images/superpower.png"
 import "../styles/volunteer-form.css"
 
@@ -39,9 +39,9 @@ export default function Contact() {
     <Layout>
       <Seo title="Contact Us" />
       <Header pageHeading="Contact Us" />
-      <div className="container-fluid">
+      <div className="container-fluid contact-first-row">
         <div className="row col-sm-12 contact-form-heading">
-          <h1 className="contact-heading">Get in Touch!</h1>
+          <h1 className="contact-heading">Have a general question? </h1>
         </div>
         <div className="row form-column">
           <div className="contact-form col-lg-6">
@@ -96,8 +96,10 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="container">
-        <ContactMap />
+      <div className="container-fluid">
+        <div className="row col-12" style={{ height: `500px`, width: `100%` }}>
+          <ContactUsMap />
+        </div>
       </div>
     </Layout>
   )
