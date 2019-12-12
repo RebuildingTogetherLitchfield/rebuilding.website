@@ -41,7 +41,22 @@ export default function Contact() {
       <Header pageHeading="Contact Us" />
       <div className="container-fluid contact-first-row">
         <div className="row col-sm-12 contact-form-heading">
-          <h1 className="contact-heading">Have a general question? </h1>
+          <h1 className="contact-heading">Have a general question?</h1>
+          <div className="col-sm-12" style={{ marginTop: `18px` }}>
+            <h3>Rebuilding Together Litchfield County</h3>
+            <p style={{ marginTop: `-20px`, fontSize: `1.2em` }}>
+              30 Bantam Terrace
+            </p>
+            <p style={{ marginTop: `-26px`, fontSize: `1.2em` }}>
+              Bantam, CT 06750
+            </p>
+            <p style={{ marginTop: `-26px`, fontSize: `1.2em` }}>
+              <a href="mailto:info@rebuildingtogetherlitchfield.org">
+                info@rebuildingtogetherlitchfield.org
+              </a>
+            </p>
+          </div>
+          <div className="col-sm-12"></div>
         </div>
         <div className="row form-column">
           <div className="contact-form col-lg-6">
