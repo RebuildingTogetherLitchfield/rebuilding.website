@@ -27,7 +27,7 @@ const SecondPage = () => {
           <img
             src="https://res.cloudinary.com/mattaz/image/upload/v1572459613/RebuildingTogether/2016-07-28_group.png"
             alt="Rebuilding Together Crew"
-            className="about-intro-img fadeInImage"
+            className="about-intro-img animated flipInX"
           />
         </div>
         <div className="row nondiscrimination">

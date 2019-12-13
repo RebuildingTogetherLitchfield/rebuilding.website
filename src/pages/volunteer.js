@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import Header from "../components/Header"
+import VisibilitySensor from "react-visibility-sensor"
 import volunteerHero from "../images/volunteerHero.png"
 import twoHouses from "../images/twoHouses.svg"
 import volImg from "../images/vol_img_2.jpg"
@@ -21,6 +22,7 @@ const Volunteer = () => {
                 src={volunteerHero}
                 style={{ maxHeight: `540px`, marginBottom: `2em` }}
                 alt="Heart with Brand"
+                className="tilt-in"
               />
             </div>
             <div className="col-sm-6" style={{ margin: `auto` }}>
@@ -80,17 +82,22 @@ const Volunteer = () => {
             </div>
             <div className="row mt-3" style={{ marginBottom: `45px` }}>
               <div className="col-sm-2 col-md-5">
-                <img
-                  src={volImg}
-                  alt="Man Cutting Board"
-                  className="vol_img"
-                  style={{
-                    borderRadius: `45px`,
-                    marginTop: `35px`,
-                    marginBottom: `45px`,
-                    boxShadow: `10px 10px 10px 0px #bababa`,
-                  }}
-                />
+                <VisibilitySensor>
+                  {({ isVisible }) => (
+                    <img
+                      src={volImg}
+                      alt="Man Cutting Board"
+                      className={isVisible ? `animated flipInX` : null}
+                      style={{
+                        borderRadius: `45px`,
+                        marginTop: `35px`,
+                        marginBottom: `45px`,
+                        boxShadow: `10px 10px 10px 0px #bababa`,
+                        visibility: isVisible ? `visible` : `hidden`,
+                      }}
+                    />
+                  )}
+                </VisibilitySensor>
               </div>
               <ul
                 className="col-sm-6 mx-auto"

@@ -65,7 +65,7 @@ export default function VolunteerForm() {
                 type="text"
                 name="name"
                 required
-                minlength="3"
+                minLength="3"
                 onChange={handleChange}
               />
               <br />
