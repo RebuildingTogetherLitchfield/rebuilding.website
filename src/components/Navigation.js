@@ -97,13 +97,20 @@ const Navigation = () => {
             </Link>
           </div>
           <NavDropdown
-            title="Documents"
+            title="Get Help"
             id="collapsible-nav-dropdown"
             alignRight={true}
             className="dropdown_btn nav_link bdr-left"
             style={{ paddingTop: `7px` }}
           >
-            <NavDropdown.Item href="#action/3.1">Application</NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={e => {
+                e.preventDefault()
+                navigate("/application/")
+              }}
+            >
+              Application
+            </NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
               Deaf HIP Checklist
             </NavDropdown.Item>

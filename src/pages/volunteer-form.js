@@ -32,7 +32,6 @@ export default function VolunteerForm() {
       .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error))
   }
-
   return (
     <Layout>
       <Seo title="Volunteer Sign Up Form" />
