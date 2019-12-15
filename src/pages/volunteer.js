@@ -82,7 +82,7 @@ const Volunteer = () => {
             </div>
             <div className="row mt-3" style={{ marginBottom: `45px` }}>
               <div className="col-sm-2 col-md-5">
-                <VisibilitySensor>
+                <VisibilitySensor partialVisibility>
                   {({ isVisible }) => (
                     <img
                       src={volImg}

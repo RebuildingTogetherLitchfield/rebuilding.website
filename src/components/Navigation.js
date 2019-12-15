@@ -117,7 +117,7 @@ const Navigation = () => {
             <NavDropdown.Item
               onClick={event => {
                 event.preventDefault()
-                navigate("/about-us/")
+                navigate("/inspection-review/")
               }}
             >
               Inspection Review
