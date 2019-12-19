@@ -55,6 +55,11 @@ export default function Contact() {
                 info@rebuildingtogetherlitchfield.org
               </a>
             </p>
+            <p className="call-me">
+              <a href="tel:203-940-9666" className="btn btn-success">
+                Click to Call us at: (203) 240-9666
+              </a>
+            </p>
           </div>
           <div className="col-sm-12"></div>
         </div>
