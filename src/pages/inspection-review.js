@@ -28,7 +28,7 @@ const InspectionReview = () => {
               borderColor: `#FFA500`,
               margin: `0 auto 45px`,
             }}
-            className="col-sm-6"
+            className="col-sm-7"
           />
         </div>
         <div className="row mb-4 mx-auto">
