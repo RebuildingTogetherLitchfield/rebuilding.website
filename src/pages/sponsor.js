@@ -17,8 +17,7 @@ const Sponsor = () => {
         <div className="row">
           <h1
             className="sponsor-heading"
-            style={{ textAlign: `center`, margin: `26px auto` }}
-          >
+            style={{ textAlign: `center`, margin: `26px auto` }}>
             We have helped over{" "}
             <span style={{ color: `red` }}>
               <CountUp end={346} />
@@ -35,15 +34,13 @@ const Sponsor = () => {
           <Link
             to="/sponsor-form/"
             className="btn btn-success"
-            style={{ margin: `10px auto` }}
-          >
+            style={{ margin: `10px auto` }}>
             Sign Up
           </Link>
         </div>
         <div
           className="row"
-          style={{ marginBottom: `35px`, marginTop: `26px` }}
-        >
+          style={{ marginBottom: `35px`, marginTop: `26px` }}>
           <img
             src={workLeft}
             className="col-sm-5 left-image"

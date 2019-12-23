@@ -17,8 +17,7 @@ const Application = () => {
         style={{
           marginTop: `45px`,
           overflow: `hidden`,
-        }}
-      >
+        }}>
         Loading…
       </iframe>
     </Layout>

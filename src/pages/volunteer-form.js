@@ -47,8 +47,7 @@ export default function VolunteerForm() {
           action="/thanks/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit}
-        >
+          onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="volunteer" />
           <p hidden>
             <label>
@@ -74,8 +73,7 @@ export default function VolunteerForm() {
                   fontWeight: `normal`,
                   color: `red`,
                   marginLeft: `5px`,
-                }}
-              >
+                }}>
                 *required
               </span>
             </label>
@@ -153,8 +151,7 @@ export default function VolunteerForm() {
                   fontWeight: `normal`,
                   color: `red`,
                   marginLeft: `5px`,
-                }}
-              >
+                }}>
                 *required
               </span>
             </label>
@@ -177,8 +174,7 @@ export default function VolunteerForm() {
                   fontWeight: `normal`,
                   color: `red`,
                   marginLeft: `5px`,
-                }}
-              >
+                }}>
                 *required
               </span>
             </label>

@@ -8,8 +8,7 @@ const VolunteerCta = () => {
   return (
     <div
       className={styles.becomeVolunteer}
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
+      style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="container">
         <div className="row">
           <div className="col-xl-8 offset-xl-2 col-md-10 offset-md-1">

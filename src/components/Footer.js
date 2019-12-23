@@ -19,8 +19,7 @@ const Footer = () => {
             href="https://mattaz.com"
             target="_blank"
             rel="noreferrer noopener"
-            className={styles.developer}
-          >
+            className={styles.developer}>
             Mattaz Web Development
           </a>
         </div>

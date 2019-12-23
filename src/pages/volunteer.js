@@ -35,7 +35,7 @@ const Volunteer = () => {
                 contribute their talents. If you would like to contribute yours,
                 please email{" "}
                 <a href="mailto:info@rebuildingtogetherlitchfield.org">
-                  info@rebuildinglitchfieldcounty.org
+                  info@rebuildingtogetherlitchfield.org
                 </a>{" "}
                 so we can pair you with a qualified homeowner. Rebuilding
                 Together does specialty work in the repair of homes, however,
@@ -101,15 +101,13 @@ const Volunteer = () => {
               </div>
               <ul
                 className="col-sm-6 mx-auto"
-                style={{ listStyleType: `square` }}
-              >
+                style={{ listStyleType: `square` }}>
                 <h3
                   style={{
                     color: `#1a1a1a`,
                     textAlign: `left`,
                     marginLeft: `5px`,
-                  }}
-                >
+                  }}>
                   Our main priorities are:
                 </h3>
                 <li className="ml-4">
@@ -129,8 +127,7 @@ const Volunteer = () => {
                     color: `#1a1a1a`,
                     textAlign: `left`,
                     marginLeft: `5px`,
-                  }}
-                >
+                  }}>
                   What we don't repair:
                 </h3>
                 <li className="ml-4">Major HVAC</li>
@@ -155,8 +152,7 @@ const Volunteer = () => {
                   onClick={event => {
                     event.preventDefault()
                     navigate("/volunteer-form/")
-                  }}
-                >
+                  }}>
                   Sign Up!
                 </Button>
               </div>

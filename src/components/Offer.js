@@ -56,8 +56,7 @@ const Offer = () => {
                 padding: `20px 0 10px`,
                 textAlign: `center`,
                 fontWeight: 800,
-              }}
-            >
+              }}>
               Services for Homeowners
             </h3>
             <ul>

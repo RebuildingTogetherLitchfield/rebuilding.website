@@ -35,8 +35,7 @@ const Navigation = () => {
         <Button
           variant="danger"
           className="donate-btn"
-          href="https://secure.anedot.com/rebuilding-together-litchfield-county/donate"
-        >
+          href="https://secure.anedot.com/rebuilding-together-litchfield-county/donate">
           &hearts; Donate
         </Button>
         <Nav className="right-nav">
@@ -54,30 +53,26 @@ const Navigation = () => {
             title="About Us"
             id="basic-nav-dropdown"
             className="dropdown_btn nav_link bdr-left"
-            style={{ paddingTop: `7px` }}
-          >
+            style={{ paddingTop: `7px` }}>
             <NavDropdown.Item
               onClick={e => {
                 e.preventDefault()
                 navigate("/about-us/")
-              }}
-            >
+              }}>
               About RTLC
             </NavDropdown.Item>
             <NavDropdown.Item
               onClick={event => {
                 event.preventDefault()
                 navigate("/strategic-plan/")
-              }}
-            >
+              }}>
               Strategic Plan
             </NavDropdown.Item>
             <NavDropdown.Item
               onClick={event => {
                 event.preventDefault()
                 navigate("/about-us/")
-              }}
-            >
+              }}>
               In The News
             </NavDropdown.Item>
             <NavDropdown.Divider />
@@ -85,8 +80,7 @@ const Navigation = () => {
               onClick={e => {
                 e.preventDefault()
                 navigate("/board-of-directors/")
-              }}
-            >
+              }}>
               Board of Directors
             </NavDropdown.Item>
           </NavDropdown>
@@ -101,14 +95,12 @@ const Navigation = () => {
             id="collapsible-nav-dropdown"
             alignRight={true}
             className="dropdown_btn nav_link bdr-left"
-            style={{ paddingTop: `7px` }}
-          >
+            style={{ paddingTop: `7px` }}>
             <NavDropdown.Item
               onClick={e => {
                 e.preventDefault()
                 navigate("/application/")
-              }}
-            >
+              }}>
               Application
             </NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
@@ -118,8 +110,7 @@ const Navigation = () => {
               onClick={event => {
                 event.preventDefault()
                 navigate("/inspection-review/")
-              }}
-            >
+              }}>
               Inspection Review
             </NavDropdown.Item>
             <NavDropdown.Item href="#action/3.4">

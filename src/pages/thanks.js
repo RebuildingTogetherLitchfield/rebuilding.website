@@ -22,10 +22,14 @@ export default () => (
       <p className="thanks-para center" style={{ fontSize: `24px` }}>
         We appreciate your interest in Rebuilding Together Litchfield County. We
         are a part of a larger community of{" "}
-        <span style={{ color: `#89c853` }}>[Re]</span>Builder's. Check out our <a href="https://rebuildingtogether.org">Rebuilding Together National Organization</a>.{" "}
+        <span style={{ color: `#89c853` }}>[Re]</span>Builder's. Check out our{" "}
+        <a href="https://rebuildingtogether.org">
+          Rebuilding Together National Organization
+        </a>
+        .{" "}
       </p>
       <p className="center">
-      <Link to="/">&larr; Go Back to Homepage</Link>
+        <Link to="/">&larr; Go Back to Homepage</Link>
       </p>
     </div>
   </Layout>

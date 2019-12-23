@@ -45,8 +45,7 @@ class ContactUsMap extends Component {
         initialCenter={{
           lat: 41.724958,
           lng: -73.243417,
-        }}
-      >
+        }}>
         <Marker
           onClick={this.onMarkerClick}
           title={"RTLC"}
@@ -55,8 +54,7 @@ class ContactUsMap extends Component {
         />
         <InfoWindow
           marker={this.state.activeMarker}
-          visible={this.state.showInfoWindow}
-        >
+          visible={this.state.showInfoWindow}>
           <div>
             <h3>Rebuilding Together Litchfield</h3>
             <p>

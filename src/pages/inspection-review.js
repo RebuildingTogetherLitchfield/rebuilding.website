@@ -15,8 +15,7 @@ const InspectionReview = () => {
       <div className="container">
         <div
           className="row col-sm-12"
-          style={{ textAlign: `center`, margin: `auto` }}
-        >
+          style={{ textAlign: `center`, margin: `auto` }}>
           <h3 className="center col-sm-12 mt-4">
             Identify fall hazards and accessibility issues
           </h3>
@@ -34,8 +33,7 @@ const InspectionReview = () => {
         <div className="row mb-4 mx-auto">
           <Tab.Container
             id="inspection-review-tablist"
-            defaultActiveKey="#link1"
-          >
+            defaultActiveKey="#link1">
             <Row>
               <Col sm={4}>
                 <ListGroup className="flex-column">

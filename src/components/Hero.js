@@ -10,8 +10,7 @@ const Hero = props => {
       style={{
         backgroundImage: `url(${props.imageUrl})`,
         height: `${props.height}`,
-      }}
-    >
+      }}>
       <div className={styles.heroWriting}>
         <h1 className={styles.heroHeading}>
           Rebuilding Together Litchfield County
@@ -24,8 +23,7 @@ const Hero = props => {
           onClick={e => {
             e.preventDefault()
             navigate("/volunteer/")
-          }}
-        >
+          }}>
           Become a Volunteer
         </button>
       </div>

@@ -29,7 +29,6 @@ const ImgCarousel = () => {
           src={secondCarousel}
           alt="Our Volunteers"
         />
-
         <Carousel.Caption>
           <h1 className="carousel-heading">
             Rebuilding Together Litchfield County

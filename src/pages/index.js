@@ -90,8 +90,7 @@ const IndexPage = () => {
                 <p>
                   <a
                     href="https://secure.anedot.com/rebuilding-together-litchfield-county/donate"
-                    className="btn btn-success"
-                  >
+                    className="btn btn-success">
                     Donate now
                   </a>
                 </p>
