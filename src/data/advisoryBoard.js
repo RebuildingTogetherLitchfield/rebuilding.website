@@ -34,13 +34,6 @@ const advisoryBoard = [
     excerpt:
       "A Certified Paralegal and Notary Public, Tegan brings her long-time legal expertise and her gift of volunteerism to the Board and is responsible for pulling all needed permits. Tegan is also President of Templeton Farms Board of Directors in Kent.",
   },
-  {
-    id: "16",
-    name: "Lockey Coughlin",
-    position: "Board Member",
-    excerpt:
-      "Founding Coordinator, Education Without Walls, New Milford. Financial Advisor, Aberdeen Associates, Greenwich, CT",
-  },
 ]
 
 export default advisoryBoard

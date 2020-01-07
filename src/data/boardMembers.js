@@ -34,6 +34,13 @@ const boardMembers = [
     excerpt:
       "Webster Bank's Deputy General Counsel and avid do-it-yourself practitioner. Fred brings needed vocational and avocational skills to the Board. ",
   },
+  {
+    id: "11",
+    name: "Lockey Coughlin",
+    position: "Board Member",
+    excerpt:
+      "Founding member, former executive board member, treasurer and secretary for Rebuilding Together. Founding coordinator of Education Without Walls and Webb Youth Services.",
+  },
 ]
 
 export default boardMembers

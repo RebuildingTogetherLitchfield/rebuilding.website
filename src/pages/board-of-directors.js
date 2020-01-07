@@ -45,23 +45,27 @@ const BoardOfDirectors = () => {
   return (
     <Layout>
       <SEO title="Board of Directors" />
-      <Header pageHeading="Board Members" />
+      <Header pageHeading="Board of Directors" />
       <div className="container">
-        <h1 style={{ marginTop: 50 }}>Board of Directors</h1>
+        <h2
+          className="font-weight-bold"
+          style={{ marginTop: 50, textAlign: `center` }}>
+          Executive
+        </h2>
       </div>
       <div>{executives}</div>
       <div className="container">
-        <h2>Executive Committee</h2>
+        <h2 style={{ textAlign: `center` }}>Executive Committee</h2>
       </div>
       <div>{committee}</div>
       <div className="container">
-        <h2>Members of the Board</h2>
+        <h2 style={{ textAlign: `center` }}>Members of the Board</h2>
       </div>
       <div>{board}</div>
       <div className="container">
-        <h2>Advisory Board</h2>
+        <h2 style={{ textAlign: `center` }}>Advisory Board</h2>
       </div>
-      <div>{advisory}</div>
+      <div style={{ marginBottom: `35px` }}>{advisory}</div>
     </Layout>
   )
 }
