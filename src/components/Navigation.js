@@ -84,12 +84,6 @@ const Navigation = () => {
               Board of Directors
             </NavDropdown.Item>
           </NavDropdown>
-
-          <div className="nav_link bdr-left">
-            <Link className="menu_btn" to="/contact-us/">
-              Contact Us
-            </Link>
-          </div>
           <NavDropdown
             title="Get Help"
             id="collapsible-nav-dropdown"
@@ -117,6 +111,11 @@ const Navigation = () => {
               Home Safety Check
             </NavDropdown.Item>
           </NavDropdown>
+          <div className="nav_link bdr-left">
+            <Link className="menu_btn" to="/contact-us/">
+              Contact Us
+            </Link>
+          </div>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
