@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { navigate } from "gatsby"
 
@@ -12,6 +12,17 @@ import fbLogo from "../images/icons/squareFb.png"
 import "./navigation.css"
 
 const Navigation = () => {
+  const [isAboutOpen, setAboutOpen] = useState(false)
+  const [isHelpOpen, setHelpOpen] = useState(false)
+  function toggleAboutMenu() {
+    if (!isAboutOpen) setAboutOpen(true)
+    else setAboutOpen(false)
+  }
+  function toggleHelpMenu() {
+    if (!isHelpOpen) setHelpOpen(true)
+    else setHelpOpen(false)
+  }
+
   return (
     <Navbar collapseOnSelect expand="lg" variant="light" className="top_nav">
       <Navbar.Brand href="https://rebuildingtogetherlitchfield.org">
@@ -53,7 +64,10 @@ const Navigation = () => {
             title="About Us"
             id="basic-nav-dropdown"
             className="dropdown_btn nav_link bdr-left"
-            style={{ paddingTop: `7px` }}>
+            style={{ paddingTop: `7px` }}
+            onMouseEnter={toggleAboutMenu}
+            onMouseLeave={toggleAboutMenu}
+            show={isAboutOpen}>
             <NavDropdown.Item
               onClick={e => {
                 e.preventDefault()
@@ -89,7 +103,10 @@ const Navigation = () => {
             id="collapsible-nav-dropdown"
             alignRight={true}
             className="dropdown_btn nav_link bdr-left"
-            style={{ paddingTop: `7px` }}>
+            style={{ paddingTop: `7px` }}
+            onMouseEnter={toggleHelpMenu}
+            onMouseLeave={toggleHelpMenu}
+            show={isHelpOpen}>
             <NavDropdown.Item
               onClick={e => {
                 e.preventDefault()
