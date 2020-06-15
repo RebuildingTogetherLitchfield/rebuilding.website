@@ -9,18 +9,18 @@ import "../styles/volunteer-form.css"
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&")
 }
 
 export default function Contact() {
   const [state, setState] = React.useState({})
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
     fetch("/", {
@@ -32,7 +32,7 @@ export default function Contact() {
       }),
     })
       .then(() => navigate(form.getAttribute("action")))
-      .catch(error => alert(error))
+      .catch((error) => alert(error))
   }
 
   return (
