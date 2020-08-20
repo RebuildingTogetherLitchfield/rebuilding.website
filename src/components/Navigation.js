@@ -69,21 +69,21 @@ const Navigation = () => {
             onMouseLeave={toggleAboutMenu}
             show={isAboutOpen}>
             <NavDropdown.Item
-              onClick={e => {
+              onClick={(e) => {
                 e.preventDefault()
                 navigate("/about-us/")
               }}>
-              About RTLC
+              Learn About Us
             </NavDropdown.Item>
             <NavDropdown.Item
-              onClick={event => {
+              onClick={(event) => {
                 event.preventDefault()
                 navigate("/strategic-plan/")
               }}>
               Strategic Plan
             </NavDropdown.Item>
             <NavDropdown.Item
-              onClick={event => {
+              onClick={(event) => {
                 event.preventDefault()
                 navigate("/about-us/")
               }}>
@@ -91,7 +91,7 @@ const Navigation = () => {
             </NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item
-              onClick={e => {
+              onClick={(e) => {
                 e.preventDefault()
                 navigate("/board-of-directors/")
               }}>
@@ -108,7 +108,7 @@ const Navigation = () => {
             onMouseLeave={toggleHelpMenu}
             show={isHelpOpen}>
             <NavDropdown.Item
-              onClick={e => {
+              onClick={(e) => {
                 e.preventDefault()
                 navigate("/application/")
               }}>
@@ -118,7 +118,7 @@ const Navigation = () => {
               Deaf HIP Checklist
             </NavDropdown.Item>
             <NavDropdown.Item
-              onClick={event => {
+              onClick={(event) => {
                 event.preventDefault()
                 navigate("/inspection-review/")
               }}>
