@@ -74,20 +74,20 @@ export default function Contact() {
               onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
-                <label className="label-text">
+                <label className="label-text" for="bot-field">
                   Don’t fill this out:{" "}
                   <input name="bot-field" onChange={handleChange} />
                 </label>
               </p>
               <p>
-                <label className="label-text">
+                <label className="label-text" for="name">
                   Your name:
                   <br />
                   <input type="text" name="name" onChange={handleChange} />
                 </label>
               </p>
               <p>
-                <label className="label-text">
+                <label className="label-text" for="email">
                   Your email:
                   <br />
                   <input
@@ -99,7 +99,7 @@ export default function Contact() {
                 </label>
               </p>
               <p>
-                <label className="label-text">
+                <label className="label-text" for="message">
                   Message:
                   <br />
                   <textarea name="message" onChange={handleChange} />
