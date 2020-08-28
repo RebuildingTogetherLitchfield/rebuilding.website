@@ -8,6 +8,9 @@ import Col from "react-bootstrap/Col"
 import ListGroup from "react-bootstrap/ListGroup"
 
 const InspectionReview = () => {
+  const myPointer = {
+    cursor: `pointer`,
+  }
   return (
     <Layout>
       <Seo title="Inspection Review Checklist" />
@@ -37,34 +40,34 @@ const InspectionReview = () => {
             <Row>
               <Col sm={4}>
                 <ListGroup className="flex-column">
-                  <ListGroup.Item href="#link1" style={{ cursor: `pointer` }}>
+                  <ListGroup.Item href="#link1" style={myPointer}>
                     Exterior Entrances &amp; Exits
                   </ListGroup.Item>
-                  <ListGroup.Item href="#link2" style={{ cursor: `pointer` }}>
+                  <ListGroup.Item href="#link2" style={myPointer}>
                     Interior Doors, Stairs, Halls
                   </ListGroup.Item>
-                  <ListGroup.Item href="#link3" style={{ cursor: `pointer` }}>
+                  <ListGroup.Item href="#link3" style={myPointer}>
                     Bathrooms
                   </ListGroup.Item>
-                  <ListGroup.Item href="#link4" style={{ cursor: `pointer` }}>
+                  <ListGroup.Item href="#link4" style={myPointer}>
                     Kitchen
                   </ListGroup.Item>
-                  <ListGroup.Item href="#link5" style={{ cursor: `pointer` }}>
+                  <ListGroup.Item href="#link5" style={myPointer}>
                     Living / Dining / Bedroom
                   </ListGroup.Item>
-                  <ListGroup.Item href="#link6" style={{ cursor: `pointer` }}>
+                  <ListGroup.Item href="#link6" style={myPointer}>
                     Telephone / Door
                   </ListGroup.Item>
-                  <ListGroup.Item href="#link7" style={{ cursor: `pointer` }}>
+                  <ListGroup.Item href="#link7" style={myPointer}>
                     Storage Space
                   </ListGroup.Item>
-                  <ListGroup.Item href="#link8" style={{ cursor: `pointer` }}>
+                  <ListGroup.Item href="#link8" style={myPointer}>
                     Windows
                   </ListGroup.Item>
-                  <ListGroup.Item href="#link9" style={{ cursor: `pointer` }}>
+                  <ListGroup.Item href="#link9" style={myPointer}>
                     Electric Outlets &amp; Controls
                   </ListGroup.Item>
-                  <ListGroup.Item href="#link10" style={{ cursor: `pointer` }}>
+                  <ListGroup.Item href="#link10" style={myPointer}>
                     Heat / Light / Ventilation / Security / CO2 / Water Temp
                     Control
                   </ListGroup.Item>

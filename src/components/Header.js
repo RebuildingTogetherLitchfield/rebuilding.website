@@ -2,7 +2,7 @@ import React from "react"
 
 import "./navigation.css"
 
-const Header = props => {
+const Header = (props) => {
   const styles = {
     background: `#7ac143`,
     margin: `auto`,

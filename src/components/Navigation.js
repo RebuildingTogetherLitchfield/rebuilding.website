@@ -124,7 +124,7 @@ const Navigation = () => {
               }}>
               Inspection Review
             </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.4">
+            <NavDropdown.Item href="/home-safety-check/">
               Home Safety Check
             </NavDropdown.Item>
           </NavDropdown>
