@@ -61,8 +61,25 @@ const HomeSafetyCheck = () => {
               <ListGroup.Item variant="success" className="font-weight-bold">
                 Interior Doors, Halls, Stairs
               </ListGroup.Item>
-              <ListGroup.Item>Hello world!!</ListGroup.Item>
-              <ListGroup.Item>Hello world!!</ListGroup.Item>
+              <ListGroup.Item>
+                Create clear pathways between rooms.
+              </ListGroup.Item>
+              <ListGroup.Item>
+                Apply color contrast/texture change at top/bottom stair edges.
+              </ListGroup.Item>
+              <ListGroup.Item>
+                Install “swing-clear” hinges to widen doorways, minimum width –
+                32”.
+              </ListGroup.Item>
+              <ListGroup.Item>
+                Install beveled thresholds (max ½”).
+              </ListGroup.Item>
+              <ListGroup.Item>
+                Replace/add non-slip surface on steps.
+              </ListGroup.Item>
+              <ListGroup.Item>
+                Repair/install stair handrails on both sides.
+              </ListGroup.Item>
             </ListGroup>
           </div>
         </div>
