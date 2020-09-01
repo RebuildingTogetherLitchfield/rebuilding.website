@@ -100,7 +100,7 @@ const HomeSafetyCheck = () => {
                         Secure floor bathmat with non-slip, double-sided rug
                         tape.
                       </li>
-                      <li>Elevate toilet height to 16 ½”</li>
+                      <li>Elevate toilet height to 16 ½”.</li>
                       <li>Adapt flush handle or install flush sensor.</li>
                       <li>Adapt or relocate toilet paper dispenser.</li>
                       <li>Round counter corners to provide safety.</li>
@@ -112,7 +112,7 @@ const HomeSafetyCheck = () => {
                         bottom vanity door/shelves.
                       </li>
                       <li>Install mirror for sitting/standing view.</li>
-                      <li>Install good-quality non-glare lighting.</li>
+                      <li>Install quality, non-glare lighting.</li>
                       <li>
                         Install no threshold shower if bathing abilities are
                         limited.
@@ -191,7 +191,7 @@ const HomeSafetyCheck = () => {
                       </li>
                       <li>
                         Improve access to/from chair and bed by inserting risers
-                        under furniture legs
+                        under furniture legs.
                       </li>
                       <li>Use side bed rail or chairs with armrests.</li>
                       <li>Install telephone jack near chair/bed.</li>
@@ -226,7 +226,7 @@ const HomeSafetyCheck = () => {
                       style={{
                         listStyleImage: `url(${checkbox})`,
                       }}>
-                      <li>Install lights inside closets.</li>
+                      <li>Install lighting inside closets.</li>
                       <li>Install adjustable closet rods and shelves.</li>
                       <li>Install bi-fold/pocket doors.</li>
                     </ul>
@@ -265,7 +265,9 @@ const HomeSafetyCheck = () => {
                         Increase resident’s access to environmental control
                         systems.
                       </li>
-                      <li>Install smoke/CO2 detectors; fire extinguisher</li>
+                      <li>
+                        Install smoke/CO2 detectors and/or fire extinguisher.
+                      </li>
                       <li>Relocate laundry appliances.</li>
                     </ul>
                   </Card.Body>
