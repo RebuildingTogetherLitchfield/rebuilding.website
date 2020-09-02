@@ -105,7 +105,7 @@ const InspectionReview = () => {
                         Note height of door threshold, knob and hinge types
                       </ListGroup.Item>
                       <ListGroup.Item>
-                        Clear width door opening; direction that door swings
+                        Clear width door opening; direction of door swing
                       </ListGroup.Item>
                       <ListGroup.Item>
                         Note presence of floor level changes

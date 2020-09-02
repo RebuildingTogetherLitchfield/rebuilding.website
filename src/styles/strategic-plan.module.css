@@ -1,0 +1,39 @@
+.mainContainer {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.planHeading {
+  margin-left: 10px;
+  font-size: 36px;
+}
+
+.planIconImg {
+  margin-right: 25px;
+  max-width: 128px;
+}
+
+.planText {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.1em;
+}
+
+@media (max-width: 676px) {
+  .planHeading {
+    font-size: 26px;
+    text-align: center;
+  }
+  .planIconImg {
+    max-width: 128px;
+    margin: auto;
+    padding-bottom: 15px;
+  }
+}
+
+.planTextList {
+  list-style-type: square;
+  list-style-position: outside;
+  list-style-image: none;
+  margin-left: 3em;
+}
