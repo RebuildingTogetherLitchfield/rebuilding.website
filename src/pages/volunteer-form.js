@@ -3,22 +3,23 @@ import React from "react"
 import Header from "../components/Header"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
-import "../styles/volunteer-form.css"
+import styles from "../styles/form.module.css"
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&")
 }
 
 export default function VolunteerForm() {
   const [state, setState] = React.useState({})
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
+    console.log(state)
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
     fetch("/", {
@@ -30,14 +31,14 @@ export default function VolunteerForm() {
       }),
     })
       .then(() => navigate(form.getAttribute("action")))
-      .catch(error => alert(error))
+      .catch((error) => alert(error))
   }
   return (
     <Layout>
       <Seo title="Volunteer Sign Up Form" />
       <Header pageHeading="Volunteer Sign Up" />
-      <div className="container center">
-        <h2 className="vol-form-heading">
+      <div className={`container center ${styles.mainContainer}`}>
+        <h2 className={styles.volFormHeading}>
           I want to become a{" "}
           <span className="font-italic text-uppercase">Volunteer!</span>{" "}
         </h2>
@@ -47,7 +48,8 @@ export default function VolunteerForm() {
           action="/thanks/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit}>
+          onSubmit={handleSubmit}
+          className={styles.mainForm}>
           <input type="hidden" name="form-name" value="volunteer" />
           <p hidden>
             <label>
@@ -56,7 +58,7 @@ export default function VolunteerForm() {
             </label>
           </p>
           <p>
-            <label className="form-label">
+            <label className={styles.formLabel}>
               Your Name:
               <br />
               <input
@@ -65,21 +67,14 @@ export default function VolunteerForm() {
                 required
                 minLength="3"
                 onChange={handleChange}
+                className={`${styles.isText} ${styles.isName}`}
               />
               <br />
-              <span
-                style={{
-                  fontSize: `14px`,
-                  fontWeight: `normal`,
-                  color: `red`,
-                  marginLeft: `5px`,
-                }}>
-                *required
-              </span>
+              <span className={styles.isRequired}>*required</span>
             </label>
           </p>
           <p>
-            <label className="form-label">
+            <label className={styles.formLabel}>
               Address:
               <br />
               <input
@@ -87,29 +82,45 @@ export default function VolunteerForm() {
                 name="address1"
                 minLength="3"
                 onChange={handleChange}
+                className={`${styles.isText} ${styles.isAddress1}`}
               />
               <br />
             </label>
           </p>
           <p>
-            <label className="form-label">
+            <label className={styles.formLabel}>
               Address:
               <br />
-              <input type="text" name="address2" onChange={handleChange} />
+              <input
+                type="text"
+                name="address2"
+                onChange={handleChange}
+                className={`${styles.isText} ${styles.isAddress2}`}
+              />
             </label>
           </p>
           <p>
-            <label className="form-label city">
+            <label className={`pr-2 ${styles.formLabel}`}>
               City:
               <br />
-              <input type="text" name="city" onChange={handleChange} />
+              <input
+                type="text"
+                name="city"
+                onChange={handleChange}
+                className={`${styles.isText} ${styles.isCity}`}
+              />
             </label>
-            <label className="form-label state">
+            <label className={`pr-2 ${styles.formLabel}`}>
               State:
               <br />
-              <input type="text" name="state" onChange={handleChange} />
+              <input
+                type="text"
+                name="state"
+                onChange={handleChange}
+                className={`${styles.isText} ${styles.isState}`}
+              />
             </label>
-            <label className="form-label zip">
+            <label className={`zip ${styles.formLabel}`}>
               Zip Code:
               <br />
               <input
@@ -117,11 +128,12 @@ export default function VolunteerForm() {
                 name="zip"
                 pattern="(\d{5}([\-]\d{4})?)"
                 onChange={handleChange}
+                className={`${styles.isText} ${styles.isZip}`}
               />
             </label>
           </p>
           <p>
-            <label className="form-label phone">
+            <label className={`pr-2 ${styles.formLabel}`}>
               Phone:
               <br />
               <input
@@ -130,11 +142,12 @@ export default function VolunteerForm() {
                 placeholder="123-456-7890"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 onChange={handleChange}
+                className={`${styles.isTel} ${styles.isPhone}`}
               />
               <br />
               &nbsp;
             </label>
-            <label className="form-label">
+            <label className={styles.formLabel}>
               Your Email:
               <br />
               <input
@@ -143,21 +156,14 @@ export default function VolunteerForm() {
                 required
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 onChange={handleChange}
+                className={`${styles.isEmail} ${styles.myEmail}`}
               />
               <br />
-              <span
-                style={{
-                  fontSize: `14px`,
-                  fontWeight: `normal`,
-                  color: `red`,
-                  marginLeft: `5px`,
-                }}>
-                *required
-              </span>
+              <span className={styles.isRequired}>*required</span>
             </label>
           </p>
           <p>
-            <label className="form-label">
+            <label className={styles.formLabel}>
               Message:
               <br />
               <textarea
@@ -166,20 +172,13 @@ export default function VolunteerForm() {
                 required
                 minLength="5"
                 onChange={handleChange}
+                className={styles.isTextarea}
               />
               <br />
-              <span
-                style={{
-                  fontSize: `14px`,
-                  fontWeight: `normal`,
-                  color: `red`,
-                  marginLeft: `5px`,
-                }}>
-                *required
-              </span>
+              <span className={styles.isRequired}>*required</span>
             </label>
           </p>
-          <p className="send-btn">
+          <p className={styles.sendButton}>
             <button className="btn btn-success" type="submit">
               Volunteer
             </button>

@@ -1,0 +1,180 @@
+.mainContainer {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.volFormHeading {
+  margin-top: 26px;
+}
+
+.mainForm {
+  padding-top: 16px;
+  border-radius: 15px;
+}
+
+.formLabel {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.isTextarea {
+  width: 636px;
+  height: 120px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.isTextarea:focus {
+  border-radius: 6px;
+  background-color: rgba(51, 204, 102, 0.2);
+  outline: 0;
+  border: solid 2px #ef7385;
+}
+
+.isTextarea:focus:valid {
+  background-color: rgba(51, 204, 102, 0.2);
+  outline: 0;
+  border: solid 2px #66b266;
+}
+
+.sendButton {
+  padding-bottom: 26px;
+}
+
+.isText,
+.isNumber,
+.isEmail,
+.isTel {
+  width: 100%;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+.isName,
+.isCompany {
+  width: 636px;
+}
+
+.isName:focus,
+.isCompany:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+  outline: 0;
+  border: solid 2px #ef7385;
+}
+
+.isName:focus:valid,
+.isCompany:focus:valid {
+  background-color: rgba(51, 204, 102, 0.2);
+  outline: 0;
+  border: solid 2px #66b266;
+}
+
+.isAddress1,
+.isTitle {
+  width: 636px;
+}
+
+.isAddress1:focus,
+.isTitle:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+.isAddress2 {
+  width: 636px;
+}
+
+.isAddress2:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+.isPhone {
+  width: 268px;
+}
+
+.isPhone:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+.myEmail {
+  width: 268px;
+}
+
+.myEmail:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+  outline: 0;
+  border: solid 2px #ef7385;
+}
+
+.myEmail:focus:valid {
+  background-color: rgba(51, 204, 102, 0.2);
+  outline: 0;
+  border: solid 2px #66b266;
+}
+
+.isCity:focus,
+.isState:focus,
+.isZip:focus {
+  background-color: rgba(51, 204, 102, 0.2);
+}
+
+.startCheck {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+
+.isFieldset {
+  margin-top: 45px;
+  border-radius: 6px;
+  border: solid 2px #7ac143;
+  width: 636px;
+}
+
+.checkboxLabel {
+  width: 336px;
+  text-shadow: 2px 2px 3px #7ac143;
+  font-size: 1.2em;
+  border-top: 2px solid #66b266;
+  border-left: 2px solid #66b266;
+  border-right: 2px solid #66b266;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  padding: 3px;
+}
+
+.checkboxDesc {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .isTextarea {
+    width: 80vw;
+    height: 120px;
+    padding: 6px 10px;
+  }
+
+  .isName,
+  .isCompany,
+  .isAddress1,
+  .isAddress2,
+  .isTitle {
+    width: 80vw;
+  }
+
+  .isCity,
+  .isState,
+  .isZip {
+    width: 168px;
+  }
+}
+
+.isRequired {
+  font-size: 14px;
+  font-weight: normal;
+  color: red;
+  margin-left: 5px;
+}

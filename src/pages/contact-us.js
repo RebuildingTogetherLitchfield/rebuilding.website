@@ -5,7 +5,7 @@ import Seo from "../components/Seo"
 import Header from "../components/Header"
 import ContactUsMap from "../components/ContactUsMap"
 import superpower from "../images/superpower.png"
-import "../styles/volunteer-form.css"
+/* import "../styles/volunteer-form.css" */
 
 function encode(data) {
   return Object.keys(data)
