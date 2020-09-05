@@ -5,7 +5,7 @@ import Seo from "../components/Seo"
 import Header from "../components/Header"
 import ContactUsMap from "../components/ContactUsMap"
 import superpower from "../images/superpower.png"
-/* import "../styles/volunteer-form.css" */
+import styles from "../styles/form.module.css"
 
 function encode(data) {
   return Object.keys(data)
@@ -39,9 +39,10 @@ export default function Contact() {
     <Layout>
       <Seo title="Contact Us" />
       <Header pageHeading="Contact Us" />
-      <div className="container-fluid contact-first-row">
-        <div className="row col-sm-12 contact-form-heading">
-          <h1 className="contact-heading">Have a general question?</h1>
+      <div
+        className={`container-fluid contact-first-row ${styles.mainContainer}`}>
+        <div className={`row col-sm-12 ${styles.contactFormHeading}`}>
+          <h1 className={styles.contactHeading}>Have a general question?</h1>
           <div className="col-sm-12" style={{ marginTop: `18px` }}>
             <h3>Rebuilding Together Litchfield County</h3>
             <p style={{ marginTop: `-20px`, fontSize: `1.2em` }}>
@@ -63,7 +64,7 @@ export default function Contact() {
           </div>
           <div className="col-sm-12"></div>
         </div>
-        <div className="row form-column">
+        <div className={`row ${style.formColumn}`}>
           <div className="contact-form col-lg-6">
             <form
               name="contact"
@@ -74,20 +75,20 @@ export default function Contact() {
               onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
-                <label className="label-text" for="bot-field">
+                <label className={styles.labelText} for="bot-field">
                   Don’t fill this out:{" "}
                   <input name="bot-field" onChange={handleChange} />
                 </label>
               </p>
               <p>
-                <label className="label-text" for="name">
+                <label className={styles.labelText} for="name">
                   Your name:
                   <br />
                   <input type="text" name="name" onChange={handleChange} />
                 </label>
               </p>
               <p>
-                <label className="label-text" for="email">
+                <label className={styles.labelText} for="email">
                   Your email:
                   <br />
                   <input
@@ -99,7 +100,7 @@ export default function Contact() {
                 </label>
               </p>
               <p>
-                <label className="label-text" for="message">
+                <label className={styles.labelText} for="message">
                   Message:
                   <br />
                   <textarea name="message" onChange={handleChange} />
@@ -110,8 +111,8 @@ export default function Contact() {
               </p>
             </form>
           </div>
-          <div className="col-lg-6 picture-column">
-            <img src={superpower} alt="Keep Calm" className="keep-calm" />
+          <div className={`col-lg-6 ${styles.pictureColumn}`}>
+            <img src={superpower} alt="Keep Calm" className={styles.keepCalm} />
           </div>
         </div>
       </div>
