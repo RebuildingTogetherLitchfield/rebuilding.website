@@ -208,3 +208,19 @@
   border-radius: 10px;
   box-shadow: 0 35px 20px #777;
 }
+
+.infoDiv {
+  margin-top: 18px;
+}
+
+.infoAddress {
+  margin-top: -20px;
+}
+
+.infoCityStateEmail {
+  margin-top: -26px;
+}
+
+.infoParagraph {
+  font-size: 1.2em;
+}

@@ -43,15 +43,17 @@ export default function Contact() {
         className={`container-fluid contact-first-row ${styles.mainContainer}`}>
         <div className={`row col-sm-12 ${styles.contactFormHeading}`}>
           <h1 className={styles.contactHeading}>Have a general question?</h1>
-          <div className="col-sm-12" style={{ marginTop: `18px` }}>
+          <div className={`col-sm-12 ${styles.infoDiv}`}>
             <h3>Rebuilding Together Litchfield County</h3>
-            <p style={{ marginTop: `-20px`, fontSize: `1.2em` }}>
+            <p className={`${styles.infoAddress} ${styles.infoParagraph}`}>
               30 Bantam Terrace
             </p>
-            <p style={{ marginTop: `-26px`, fontSize: `1.2em` }}>
+            <p
+              className={`${styles.infoCityStateEmail} ${styles.infoParagraph}`}>
               Bantam, CT 06750
             </p>
-            <p style={{ marginTop: `-26px`, fontSize: `1.2em` }}>
+            <p
+              className={`${styles.infoCityStateEmail} ${styles.infoParagraph}`}>
               <a href="mailto:info@rebuildingtogetherlitchfield.org">
                 info@rebuildingtogetherlitchfield.org
               </a>
