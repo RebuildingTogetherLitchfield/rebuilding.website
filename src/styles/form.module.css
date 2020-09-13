@@ -224,3 +224,8 @@
 .infoParagraph {
   font-size: 1.2em;
 }
+
+.contactMapContainer {
+  height: 500px;
+  width: 100%;
+}

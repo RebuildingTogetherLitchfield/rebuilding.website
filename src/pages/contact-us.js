@@ -119,7 +119,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="container-fluid">
-        <div className="row col-12" style={{ height: `500px`, width: `100%` }}>
+        <div className={`row col-12" ${styles.contactMapContainer}`}>
           <ContactUsMap />
         </div>
       </div>
