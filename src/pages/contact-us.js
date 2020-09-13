@@ -39,8 +39,7 @@ export default function Contact() {
     <Layout>
       <Seo title="Contact Us" />
       <Header pageHeading="Contact Us" />
-      <div
-        className={`container-fluid contact-first-row ${styles.mainContainer}`}>
+      <div className={`container ${styles.contactMain}`}>
         <div className={`row col-sm-12 ${styles.contactFormHeading}`}>
           <h1 className={styles.contactHeading}>Have a general question?</h1>
           <div className={`col-sm-12 ${styles.infoDiv}`}>
@@ -66,7 +65,7 @@ export default function Contact() {
           </div>
           <div className="col-sm-12"></div>
         </div>
-        <div className={`row ${style.formColumn}`}>
+        <div className={`row ${styles.formColumn}`}>
           <div className="contact-form col-lg-6">
             <form
               name="contact"
@@ -77,23 +76,29 @@ export default function Contact() {
               onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
-                <label className={styles.labelText} for="bot-field">
+                <label className={styles.labelText} htmlFor="bot-field">
                   Don’t fill this out:{" "}
                   <input name="bot-field" onChange={handleChange} />
                 </label>
               </p>
               <p>
-                <label className={styles.labelText} for="name">
+                <label className={styles.labelText} htmlFor="name">
                   Your name:
                   <br />
-                  <input type="text" name="name" onChange={handleChange} />
+                  <input
+                    className={`${styles.isText} ${styles.isName}`}
+                    type="text"
+                    name="name"
+                    onChange={handleChange}
+                  />
                 </label>
               </p>
               <p>
-                <label className={styles.labelText} for="email">
+                <label className={styles.labelText} htmlFor="email">
                   Your email:
                   <br />
                   <input
+                    className={`${styles.isText} ${styles.isCompany}`}
                     type="email"
                     name="email"
                     id="contact-email"
@@ -102,10 +107,14 @@ export default function Contact() {
                 </label>
               </p>
               <p>
-                <label className={styles.labelText} for="message">
+                <label className={styles.labelText} htmlFor="message">
                   Message:
                   <br />
-                  <textarea name="message" onChange={handleChange} />
+                  <textarea
+                    name="message"
+                    onChange={handleChange}
+                    className={styles.isTextarea}
+                  />
                 </label>
               </p>
               <p>

@@ -2,6 +2,11 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.contactMain {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 85px;
+}
+
 .volFormHeading {
   margin-top: 26px;
 }
@@ -223,6 +228,10 @@
 
 .infoParagraph {
   font-size: 1.2em;
+}
+
+.contactFirstRow {
+  margin-bottom: 85px;
 }
 
 .contactMapContainer {
