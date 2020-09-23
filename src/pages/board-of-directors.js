@@ -1,4 +1,6 @@
 import React from "react"
+import CardDeck from "react-bootstrap/CardDeck"
+import CardColumns from "react-bootstrap/CardColumns"
 
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
@@ -10,7 +12,7 @@ import boardMem from "../data/boardMembers"
 import advisoryBoard from "../data/advisoryBoard"
 
 const BoardOfDirectors = () => {
-  const executives = execData.map(exMem => (
+  const executives = execData.map((exMem) => (
     <BoardMember
       key={exMem.id}
       title={exMem.position}
@@ -18,7 +20,7 @@ const BoardOfDirectors = () => {
       excerpt={exMem.excerpt}
     />
   ))
-  const committee = execComm.map(commMem => (
+  const committee = execComm.map((commMem) => (
     <BoardMember
       key={commMem.id}
       title={commMem.position}
@@ -26,7 +28,7 @@ const BoardOfDirectors = () => {
       excerpt={commMem.excerpt}
     />
   ))
-  const board = boardMem.map(bMember => (
+  const board = boardMem.map((bMember) => (
     <BoardMember
       key={bMember.id}
       title={bMember.position}
@@ -34,7 +36,7 @@ const BoardOfDirectors = () => {
       excerpt={bMember.excerpt}
     />
   ))
-  const advisory = advisoryBoard.map(advisor => (
+  const advisory = advisoryBoard.map((advisor) => (
     <BoardMember
       key={advisor.id}
       title={advisor.position}
@@ -46,26 +48,39 @@ const BoardOfDirectors = () => {
     <Layout>
       <SEO title="Board of Directors" />
       <Header pageHeading="Board of Directors" />
-      <div className="container">
-        <h2
-          className="font-weight-bold"
-          style={{ marginTop: 50, textAlign: `center` }}>
-          Executive
-        </h2>
+      <div className="container mb-5">
+        <div className="container">
+          <h2
+            className="font-weight-bold"
+            style={{ marginTop: 50, textAlign: `center` }}>
+            Executive
+          </h2>
+        </div>
+        <div className="container mb-4">
+          <CardDeck>{executives}</CardDeck>
+        </div>
+
+        <div className="container">
+          <h2 style={{ textAlign: `center` }}>Executive Committee</h2>
+        </div>
+        <div className="container mb-4">
+          <CardDeck>{committee}</CardDeck>
+        </div>
+
+        <div className="container">
+          <h2 style={{ textAlign: `center` }}>Members of the Board</h2>
+        </div>
+        <div className="container mb-4">
+          <CardColumns>{board}</CardColumns>
+        </div>
+
+        <div className="container">
+          <h2 style={{ textAlign: `center` }}>Advisory Board</h2>
+        </div>
+        <div className="container mb-4">
+          <CardColumns>{advisory}</CardColumns>
+        </div>
       </div>
-      <div>{executives}</div>
-      <div className="container">
-        <h2 style={{ textAlign: `center` }}>Executive Committee</h2>
-      </div>
-      <div>{committee}</div>
-      <div className="container">
-        <h2 style={{ textAlign: `center` }}>Members of the Board</h2>
-      </div>
-      <div>{board}</div>
-      <div className="container">
-        <h2 style={{ textAlign: `center` }}>Advisory Board</h2>
-      </div>
-      <div style={{ marginBottom: `35px` }}>{advisory}</div>
     </Layout>
   )
 }

@@ -1,16 +1,22 @@
 import React from "react"
+import Card from "react-bootstrap/Card"
 
-const BoardMember = props => {
+const cardStyle = {
+  backgroundColor: `#dfe5e0`,
+  borderRadius: `6px`,
+  boxShadow: `10px 10px 15px -1px #bababa`,
+  margin: `0.5rem`,
+  padding: `10px`,
+}
+const BoardMember = (props) => {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="member">
-          <h3 className="member-name">{props.name}</h3>
-          <h4 className="title">{props.title}</h4>
-          <p className="member-excerpt">{props.excerpt}</p>
-        </div>
-      </div>
-    </div>
+    <Card className="member" style={cardStyle}>
+      <Card.Title className="member-name">{props.name}</Card.Title>
+      <Card.Subtitle className="mb-2 text-muted title">
+        {props.title}
+      </Card.Subtitle>
+      <Card.Text className="member-excerpt">{props.excerpt}</Card.Text>
+    </Card>
   )
 }
 

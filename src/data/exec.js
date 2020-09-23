@@ -11,7 +11,7 @@ const execData = [
     name: "Nancy Rebehn",
     position: "Executive Director",
     excerpt:
-      "Retiring from USDA-RD in 2017, Nancy has been with Rebuilding Together since retirement, interacting with homeowners assessing eligibility and critical needs. Nancy has been involved with Rebuilding Together for since 2017 as a volunteer, and has now taken over as CEO following Ceia's passing",
+      "Retiring from USDA Rural Development in 2017, Nancy has been with Rebuilding Together ever since, interacting with homeowners assessing eligibility and critical needs. Nancy started at Rebuilding Together as a volunteer, and has now taken over as CEO following Ceia's passing. ",
   },
 ]
 
