@@ -25,10 +25,10 @@ const Application = () => {
             </p>
             <p>
               We match our volunteers with skilled professionals to complete the
-              repairs to the homes. Repairs are completed safely and in
-              compliance with local building codes. Our biggest concerns are
-              with safety and health factors and the functioning system of a
-              home.
+              repairs to the homes. Repairs and modifications are completed
+              safely and in compliance with local building codes. Our biggest
+              concerns are with safety and health factors as well as the
+              functioning system of a home.
             </p>
             <p>
               If your home is chosen for repair work, all repairs will be
