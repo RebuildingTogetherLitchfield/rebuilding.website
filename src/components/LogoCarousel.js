@@ -1,9 +1,9 @@
 import React from "react"
 import styles from "./logocarousel.module.css"
-import sliderImg from "../data/sliderImg"
+import SLIDER_IMG from "../data/sliderImg"
 
 const LogoCarousel = () => {
-  const sliderImage = sliderImg.map((img) => {
+  const sliderImage = SLIDER_IMG.map((img) => {
     return (
       <div className={styles.slide}>
         <img
